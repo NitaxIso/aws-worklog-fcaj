@@ -505,29 +505,10 @@ html, body {
   text-decoration: none;
 }
 
-.btn-table-edit {
-  color: #0F172A;
-  border-color: #CBD5E1;
-  background: #FFFFFF;
-}
-
-.btn-table-edit:hover {
-  background: #F1F5F9;
-  border-color: #64748B;
-  color: #000000;
-}
-
-.btn-table-delete {
-  color: #DC2626;
-  border-color: #FECACA;
-  background: #FEF2F2;
-  margin-left: 6px;
-}
-
-.btn-table-delete:hover {
-  background: #FEE2E2;
-  border-color: #EF4444;
-  color: #B91C1C;
+.btn-table-edit,
+.btn-table-delete,
+.btn-table-action {
+  display: none !important;
 }
 
 .worklog-action-bar {
