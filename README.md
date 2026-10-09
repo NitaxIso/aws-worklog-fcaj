@@ -1,5 +1,5 @@
 # AWS First Cloud AI Journey (FCAJ) - Internship Report
-## Báo cáo thực tập tốt nghiệp :: Phan Nhật Uyên
+## Báo cáo thực tập tốt nghiệp :: Lê Công Luyến
 
 Trang web báo cáo thực tập chính thức được chuẩn hóa 100% theo khung chương trình **AWS First Cloud AI Journey (FCAJ)**.
 
@@ -9,25 +9,25 @@ Trang web báo cáo thực tập chính thức được chuẩn hóa 100% theo k
 
 Website được triển khai tự động qua **GitHub Pages** tại đường dẫn:
 
-👉 **[https://nhatuyen2409.github.io/web-worklog-fcaj/](https://nhatuyen2409.github.io/web-worklog-fcaj/)**
+👉 **[https://nitaxiso.github.io/aws-worklog-fcaj/](https://nitaxiso.github.io/aws-worklog-fcaj/)**
 
-* **Nhật ký công việc (Worklog):** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/worklog](https://nhatuyen2409.github.io/web-worklog-fcaj/#/worklog)
-* **Đề xuất đồ án (Proposal):** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/proposal](https://nhatuyen2409.github.io/web-worklog-fcaj/#/proposal)
-* **Bài viết Blog kỹ thuật:** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/blogs-posted](https://nhatuyen2409.github.io/web-worklog-fcaj/#/blogs-posted)
-* **Sự kiện tham gia:** [https://nhatuyen2409.github.io/web-worklog-fcaj/#/events](https://nhatuyen2409.github.io/web-worklog-fcaj/#/events)
+* **Nhật ký công việc (Worklog):** [https://nitaxiso.github.io/aws-worklog-fcaj/#/worklog](https://nitaxiso.github.io/aws-worklog-fcaj/#/worklog)
+* **Đề xuất đồ án (Proposal):** [https://nitaxiso.github.io/aws-worklog-fcaj/#/proposal](https://nitaxiso.github.io/aws-worklog-fcaj/#/proposal)
+* **Bài viết Blog kỹ thuật:** [https://nitaxiso.github.io/aws-worklog-fcaj/#/blogs-posted](https://nitaxiso.github.io/aws-worklog-fcaj/#/blogs-posted)
+* **Sự kiện tham gia:** [https://nitaxiso.github.io/aws-worklog-fcaj/#/events](https://nitaxiso.github.io/aws-worklog-fcaj/#/events)
 
 ---
 
 ### 📋 2. Thông tin sinh viên & Kỳ thực tập (Năm 2026)
 
-* **Họ và tên sinh viên:** Phan Nhật Uyên
+* **Họ và tên sinh viên:** Lê Công Luyến
 * **Trường:** Trường Đại học FPT
 * **Chuyên ngành:** An toàn thông tin
 * **Đơn vị thực tập:** Công ty TNHH Amazon Web Services (AWS) Việt Nam
 * **Chương trình:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)
-* **Mã số sinh viên:** SE196682
-* **Số điện thoại:** 0394728982
-* **Email:** nhatuien218@gmail.com
+* **Mã số sinh viên:** SE190809
+* **Số điện thoại:** 0347047101
+* **Email:** lecongluyen9a1@gmail.com
 * **Thời gian thực tập:** Từ **14/09/2026** đến **14/12/2026**
 
 ---

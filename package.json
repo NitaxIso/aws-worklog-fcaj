@@ -7,6 +7,6 @@
     "start": "npx serve -l 3000 ."
   },
   "keywords": ["worklog", "internship", "project-management"],
-  "author": "Phan Nhat Uyen",
+  "author": "Le Cong Luyen",
   "license": "MIT"
 }

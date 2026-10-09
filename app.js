@@ -2,7 +2,7 @@
  * AWS FIRST CLOUD AI JOURNEY (FCAJ) - INTERNSHIP REPORT SCRIPT
  * Comprehensive Bilingual System (Vietnamese / English)
  * Pure language switching with zero mixed bilingual text
- * Student: Phan Nhat Uyen
+ * Student: Le Cong Luyen
  */
 
 // ==========================================
@@ -200,7 +200,7 @@ const I18N_DICTIONARY = {
     
     // 6. Self-assessment
     selfSectionTitle: "6. Tự đánh giá kết quả thực tập",
-    selfSectionSubtitle: "Bảng 12 tiêu chí đánh giá năng lực của sinh viên Phan Nhat Uyen",
+    selfSectionSubtitle: "Bảng 12 tiêu chí đánh giá năng lực của sinh viên Lê Công Luyến",
     btnSaveAssessment: "Lưu tự đánh giá",
     assessNarrativeLabel: "Tóm tắt quá trình rèn luyện & công tác",
     criteriaTableTitle: "Bảng đánh giá theo 12 tiêu chí chuẩn của AWS FCAJ",
@@ -264,7 +264,7 @@ const I18N_DICTIONARY = {
     confirmDeleteTask: "Bạn có chắc muốn xóa công việc này?",
     confirmDeleteBlog: "Xóa bài blog này khỏi danh sách?",
     confirmDeleteEvent: "Xóa sự kiện này khỏi báo cáo?",
-    pageTitleDoc: "Báo cáo thực tập :: Phan Nhat Uyen - AWS First Cloud AI Journey"
+    pageTitleDoc: "Báo cáo thực tập :: Lê Công Luyến - AWS First Cloud AI Journey"
   },
   
   en: {
@@ -458,7 +458,7 @@ const I18N_DICTIONARY = {
     
     // 6. Self-assessment
     selfSectionTitle: "6. Internship Self-Assessment",
-    selfSectionSubtitle: "12-criteria competence evaluation of student Phan Nhat Uyen",
+    selfSectionSubtitle: "12-criteria competence evaluation of student Le Cong Luyen",
     btnSaveAssessment: "Save Assessment",
     assessNarrativeLabel: "Summary of Internship Practice and Conduct",
     criteriaTableTitle: "AWS FCAJ Standard 12-Criteria Evaluation Matrix",
@@ -522,7 +522,7 @@ const I18N_DICTIONARY = {
     confirmDeleteTask: "Are you sure you want to delete this task?",
     confirmDeleteBlog: "Delete this blog from the list?",
     confirmDeleteEvent: "Delete this event from the report?",
-    pageTitleDoc: "Internship Report :: Phan Nhat Uyen - AWS First Cloud AI Journey"
+    pageTitleDoc: "Internship Report :: Le Cong Luyen - AWS First Cloud AI Journey"
   }
 };
 
@@ -531,10 +531,10 @@ const I18N_DICTIONARY = {
 // ==========================================
 const DEFAULT_BILINGUAL_DATA = {
   studentInfo: {
-    fullName: "Phan Nhật Uyên",
-    studentId: "SE196682",
-    phone: "0394728982",
-    email: "nhatuien218@gmail.com",
+    fullName: "Lê Công Luyến",
+    studentId: "SE190809",
+    phone: "0347047101",
+    email: "lecongluyen9a1@gmail.com",
     vi: {
       university: "Trường Đại học FPT",
       major: "An toàn thông tin",
@@ -640,7 +640,7 @@ const DEFAULT_BILINGUAL_DATA = {
             { day: "3", desc: "- Triển khai NAT Gateway\n- Cấu hình bảng định tuyến Private Route Table", start: "2026-09-22", end: "2026-09-22", ref: "https://docs.aws.amazon.com/vpc/" },
             { day: "4", desc: "- Thực hành thiết lập Network ACL\n- So sánh NACL với Security Group theo nguyên tắc bảo mật tối thiểu", start: "2026-09-23", end: "2026-09-23", ref: "AWS Well-Architected Security" },
             { day: "5", desc: "- Khởi tạo máy chủ EC2 trong Private Subnet\n- Kiểm tra kết nối Internet qua NAT Gateway", start: "2026-09-24", end: "2026-09-24", ref: "Internal Lab Guide" },
-            { day: "6", desc: "- Báo cáo tiến độ Sprint Review\n- Trao đổi 1-on-1 hàng tuần với Mentor Trần Anh Dũng", start: "2026-09-25", end: "2026-09-25", ref: "Weekly Assessment" }
+            { day: "6", desc: "- Báo cáo tiến độ Sprint Review\n- Trao đổi 1-on-1 hàng tuần với Mentor", start: "2026-09-25", end: "2026-09-25", ref: "Weekly Assessment" }
           ]
         },
         en: {
@@ -651,7 +651,7 @@ const DEFAULT_BILINGUAL_DATA = {
             { day: "3", desc: "- Deploy NAT Gateway\n- Configure Private Route Tables", start: "2026-09-22", end: "2026-09-22", ref: "https://docs.aws.amazon.com/vpc/" },
             { day: "4", desc: "- Practice setting up Network Access Control Lists (NACLs) vs Security Groups\n- Apply principle of least privilege", start: "2026-09-23", end: "2026-09-23", ref: "AWS Well-Architected Security Pillar" },
             { day: "5", desc: "- Setup EC2 inside Private Subnet\n- Verify internet connectivity via NAT Gateway", start: "2026-09-24", end: "2026-09-24", ref: "Internal Lab Guide" },
-            { day: "6", desc: "- Sprint Review & Weekly 1-on-1 with Mentor Trần Anh Dũng", start: "2026-09-25", end: "2026-09-25", ref: "Weekly Assessment" }
+            { day: "6", desc: "- Sprint Review & Weekly 1-on-1 with Mentor", start: "2026-09-25", end: "2026-09-25", ref: "Weekly Assessment" }
           ]
         }
       };
@@ -804,8 +804,8 @@ const DEFAULT_BILINGUAL_DATA = {
     { id: 12, title_vi: "Đánh giá tổng thể", desc_vi: "Đánh giá chung cho toàn bộ thời gian thực tập", title_en: "Overall evaluation", desc_en: "General evaluation of the entire internship period", rating: "good" }
   ],
   selfNarrative: {
-    vi: "Trong suốt kỳ thực tập tại Amazon Web Services Việt Nam từ 10/08/2026 đến 10/11/2026, em đã có cơ hội quý báu để học hỏi, thực hành và vận dụng kiến thức chuyên ngành vào các dự án Cloud quy mô thực tế. Em luôn chủ động hoàn thành các bài tập lab, tham gia đầy đủ các sự kiện kỹ thuật và tích cực thảo luận cùng Mentor Trần Anh Dũng.",
-    en: "During my internship at Amazon Web Services Vietnam from 10/08/2026 to 10/11/2026, I had valuable opportunities to learn, practice, and apply academic knowledge to real-world cloud architectures. I consistently took the initiative to complete hands-on labs, attended technical events, and actively collaborated with Mentor Tran Anh Dung."
+    vi: "Trong suốt kỳ thực tập tại Amazon Web Services Việt Nam từ 14/09/2026 đến 14/12/2026, em đã có cơ hội quý báu để học hỏi, thực hành và vận dụng kiến thức chuyên ngành vào các dự án Cloud quy mô thực tế. Em luôn chủ động hoàn thành các bài tập lab, tham gia đầy đủ các sự kiện kỹ thuật và tích cực trao đổi, học hỏi cùng Mentor hướng dẫn.",
+    en: "During my internship at Amazon Web Services Vietnam from 14/09/2026 to 14/12/2026, I had valuable opportunities to learn, practice, and apply academic knowledge to real-world cloud architectures. I consistently took the initiative to complete hands-on labs, attended technical events, and actively collaborated with my mentor."
   },
   needsImprovement: {
     vi: "1. Tiếp tục rèn luyện tính kỷ luật, quản lý thời gian hiệu quả hơn khi xử lý nhiều đầu việc song song.\n2. Nâng cao tư duy phân tích và xử lý sự cố kỹ thuật khi đối mặt với các kiến trúc phân tán phức tạp.\n3. Tự tin hơn khi thuyết trình và báo cáo tiến độ kỹ thuật bằng tiếng Anh trong các cuộc họp quốc tế.",
@@ -836,8 +836,8 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v12';
-const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v11';
+const STORAGE_KEY = 'fcaj_report_bilingual_v13';
+const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v12';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -849,6 +849,7 @@ class AppLanguageManager {
 
   cleanupLegacyStorage() {
     const legacyKeys = [
+      'fcaj_report_bilingual_v12',
       'fcaj_report_bilingual_v1',
       'fcaj_report_bilingual_v2',
       'fcaj_report_bilingual_v3',
@@ -873,32 +874,9 @@ class AppLanguageManager {
       if (stored) {
         const parsed = JSON.parse(stored);
         if (parsed && parsed.worklogs && parsed.worklogs.length > 0) {
-          if (parsed.studentInfo && (parsed.studentInfo.phone === '0989888999' || !parsed.studentInfo.phone)) {
-            parsed.studentInfo.phone = '0394728982';
-            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed)); } catch (e) {}
-          }
           return parsed;
         }
       }
-      // Migrate student personal details while using fresh 2026 calendar & report content
-      const prev = localStorage.getItem(PREV_STORAGE_KEY) || localStorage.getItem('fcaj_report_bilingual_v11') || localStorage.getItem('fcaj_report_bilingual_v10');
-      const fresh = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA));
-      if (prev) {
-        const prevParsed = JSON.parse(prev);
-        if (prevParsed.worklogs && prevParsed.worklogs.length > 0) {
-          fresh.worklogs = prevParsed.worklogs;
-        }
-        if (prevParsed.currentWeek) fresh.currentWeek = prevParsed.currentWeek;
-        if (prevParsed.studentInfo) {
-          if (prevParsed.studentInfo.fullName) fresh.studentInfo.fullName = prevParsed.studentInfo.fullName;
-          if (prevParsed.studentInfo.phone && prevParsed.studentInfo.phone !== '0989888999') {
-            fresh.studentInfo.phone = prevParsed.studentInfo.phone;
-          }
-          if (prevParsed.studentInfo.email) fresh.studentInfo.email = prevParsed.studentInfo.email;
-        }
-        try { localStorage.removeItem(PREV_STORAGE_KEY); } catch (e) {}
-      }
-      return fresh;
     } catch (e) {
       console.warn('Could not read stored bilingual data, using defaults', e);
     }
@@ -1117,7 +1095,7 @@ function updateHeaderDate() {
 function updateHeaderGreeting() {
   const greetingEl = document.getElementById('greeting-display');
   if (!greetingEl) return;
-  const firstName = (app.data.studentInfo.fullName || 'Phan Nhật Uyên').split(' ').pop();
+  const firstName = (app.data.studentInfo.fullName || 'Lê Công Luyến').split(' ').pop();
   const hour = new Date().getHours();
   let greetKey = 'greetingMorning';
   if (hour >= 12 && hour < 18) {
@@ -1179,9 +1157,15 @@ function renderStudentInfoInputs() {
   setVal('info-position', loc.position);
   setVal('info-duration', loc.duration);
 
-  // Update sidebar company label
+  // Update sidebar company and profile labels
   const sidebarCompany = document.getElementById('sidebar-company');
   if (sidebarCompany) sidebarCompany.textContent = loc.company;
+  const sidebarUsername = document.getElementById('sidebar-username');
+  if (sidebarUsername) sidebarUsername.textContent = info.fullName || 'Lê Công Luyến';
+  const sidebarAvatar = document.getElementById('sidebar-avatar');
+  if (sidebarAvatar) sidebarAvatar.textContent = (info.fullName || 'L').trim().charAt(0).toUpperCase();
+  const avatarSm = document.querySelector('.avatar-sm');
+  if (avatarSm) avatarSm.textContent = (info.fullName || 'L').trim().charAt(0).toUpperCase();
 }
 
 function setupStudentInfo() {
