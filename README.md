@@ -35,37 +35,38 @@ Website được triển khai tự động qua **GitHub Pages** tại đường 
 ### 📅 3. Tóm tắt Nội dung Tuần 1 (Week 1)
 
 #### Mục tiêu tuần (Week 1 Objectives):
-* Get acquainted with FCAJ members and understand the internship working process.
-* Complete the AWS Free $100 Credit registration for hands-on practice.
-* Understand fundamental AWS services and AWS global infrastructure.
-* Become familiar with AWS Management Console and AWS CLI.
-* Learn basic Amazon EC2 concepts and perform the first EC2 hands-on lab.
+* **Onboarding & Văn hóa:** Nắm vững nội quy văn phòng HCM, quy chế điểm danh, tiêu chuẩn bảo mật và lộ trình đánh giá.
+* **Hạ tầng Cloud cơ bản:** Khởi tạo tài khoản AWS Free Tier, cấu hình bảo mật Root MFA và phân quyền IAM người dùng.
+* **Kiểm soát ngân sách:** Thiết lập công cụ AWS Budgets và CloudWatch Billing Alarm để giám sát chi phí học tập $0.
+* **Hỗ trợ kỹ thuật:** Nắm rõ các gói dịch vụ AWS Support và quy trình mở ticket hỗ trợ kỹ thuật hoặc tài khoản.
+* **Tài liệu báo cáo:** Dựng website Worklog cá nhân và thiết lập tự động hóa CI/CD với GitHub Actions.
 
 #### Nội dung công việc từng ngày (Tasks):
 * **Thứ 2 (14/09/2026):**
-  * Làm quen với mentor và các thành viên FCAJ.
-  * Tìm hiểu lộ trình, quy trình làm việc, nội quy và quy định thực tập.
-  * Hoàn thành thủ tục đăng ký nhận AWS Free $100 Credit.
-  * Kiểm tra môi trường học tập AWS và biện pháp kiểm soát chi phí.
-  * *Tài liệu:* [AWS Account](https://000001.awsstudygroup.com/) | [AWS Budgets](https://000007.awsstudygroup.com/)
+  * Tham gia buổi Onboarding với mentor và đội ngũ FCAJ HCM.
+  * Đọc, ghi nhớ và cam kết tuân thủ quy chế thực tập, tác phong làm việc.
+  * Tạo và hoàn tất hồ sơ cá nhân trên hệ thống Portal thực tập.
+  * *Tài liệu:* HCM Rules & Instructions
 * **Thứ 3 (15/09/2026):**
-  * Học nền tảng Điện toán đám mây và Amazon Web Services (AWS).
-  * Tìm hiểu Hạ tầng toàn cầu AWS: Region, Availability Zone, Edge Location.
-  * Khám phá các nhóm dịch vụ chính: Compute, Storage, Networking, Database, Security, Monitoring.
-  * *Tài liệu:* [First Cloud Journey](https://cloudjourney.awsstudygroup.com/)
+  * Nghiên cứu chính sách tài khoản AWS Free Tier và cơ chế cấp credit.
+  * Đăng ký thành công tài khoản AWS cá nhân cho kỳ thực tập.
+  * Làm quen với AWS Management Console và cấu hình Region Singapore.
+  * *Tài liệu:* AWS Free Tier Account Setup
 * **Thứ 4 (16/09/2026):**
-  * Tìm hiểu AWS Management Console và AWS CLI.
-  * Cài đặt và cấu hình AWS CLI trên máy tính (Access Key, Secret Key, Region, Output Format).
-  * Thực hành các lệnh CLI kiểm tra danh tính và tài nguyên.
-  * *Tài liệu:* [AWS CLI](https://000011.awsstudygroup.com/) | [AWS Account](https://000001.awsstudygroup.com/)
-* **Thứ 5 (17/09/2026 - 18/09/2026):**
-  * Học khái niệm cơ bản về Amazon EC2 (AMI, Instance Type, EBS, Key Pair, Security Group, IP).
-  * Vòng đời instance và cơ chế xác thực SSH.
-  * *Tài liệu:* [Amazon EC2](https://000004.awsstudygroup.com/) | [IAM Roles for EC2](https://000048.awsstudygroup.com/)
+  * Kích hoạt Multi-Factor Authentication (MFA) bảo vệ Root Account.
+  * Tạo IAM User / Group quản trị thường nhật theo quy chuẩn Least Privilege.
+  * Kích hoạt Billing Preferences, cấu hình AWS Budgets và CloudWatch Alarm.
+  * *Tài liệu:* AWS Budgets & Cost Alarm
+* **Thứ 5 (17/09/2026):**
+  * Tìm hiểu mô hình AWS Support Center, thời gian SLA các gói hỗ trợ.
+  * Thực hành các bước tạo Support Case khi gặp vấn đề dịch vụ/billing.
+  * Nghiên cứu cấu trúc chuẩn của bộ tài liệu Worklog, Proposal, Workshop.
+  * *Tài liệu:* AWS Support Guide | Workshop Sample
 * **Thứ 6 (18/09/2026):**
-  * Thực hành khởi chạy EC2 Linux instance, kết nối qua SSH.
-  * Tạo và gắn thêm ổ đĩa EBS volume mới vào máy chủ EC2.
-  * *Tài liệu:* [Amazon EC2](https://000004.awsstudygroup.com/) | [IAM Roles for EC2](https://000048.awsstudygroup.com/)
+  * Clone và thiết lập theme Worklog trên máy cá nhân.
+  * Cấu hình pipeline GitHub Actions tự động build & deploy lên GitHub Pages.
+  * Soạn thảo hoàn thiện nội dung Worklog Tuần 1 và đồng bộ lên trang web.
+  * *Tài liệu:* Hugo & Pages Deployment
 
 ---
 

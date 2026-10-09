@@ -553,78 +553,78 @@ const DEFAULT_BILINGUAL_DATA = {
   currentWeek: 1,
   worklogs: Array.from({ length: 12 }, (_, i) => {
     const weekNum = i + 1;
-            if (weekNum === 1) {
+    if (weekNum === 1) {
       return {
         weekNum: 1,
         vi: {
-          objectives: "- Get acquainted with FCAJ members and understand the internship working process.\n- Complete the AWS Free $100 Credit registration for hands-on practice.\n- Understand fundamental AWS services and AWS global infrastructure.\n- Become familiar with AWS Management Console and AWS CLI.\n- Learn basic Amazon EC2 concepts and perform the first EC2 hands-on lab.",
-          achievements: "- Successfully completed the AWS Free $100 Credit registration for AWS hands-on activities.\n- Understood the basic concepts of Cloud Computing and AWS Global Infrastructure:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Understood the major AWS service groups:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Became familiar with the AWS Management Console and learned how to:\n  - Search and access AWS services\n  - Switch AWS Regions\n  - View and manage AWS resources\n  - Check basic resource information\n- Successfully installed and configured AWS CLI, including:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Used AWS CLI to:\n  - Verify AWS identity and account information\n  - Check CLI configuration\n  - Retrieve the list of AWS Regions\n  - View EC2 instances and instance states\n  - Manage/check EC2 Key Pairs\n  - Retrieve basic AWS resource information\n- Learned the fundamental components of Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Successfully launched and managed an EC2 instance.\n- Successfully connected to a Linux EC2 instance through SSH.\n- Created and attached an additional EBS volume to an EC2 instance.\n- Practiced managing EC2 using both AWS Console and AWS CLI.\n- Gained the ability to perform a complete basic workflow:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Resource Management.",
+          objectives: "- Onboarding & Văn hóa: Nắm vững nội quy văn phòng HCM, quy chế điểm danh, tiêu chuẩn bảo mật và lộ trình đánh giá.\n- Hạ tầng Cloud cơ bản: Khởi tạo tài khoản AWS Free Tier, cấu hình bảo mật Root MFA và phân quyền IAM người dùng.\n- Kiểm soát ngân sách: Thiết lập công cụ AWS Budgets và CloudWatch Billing Alarm để giám sát chi phí học tập $0.\n- Hỗ trợ kỹ thuật: Nắm rõ các gói dịch vụ AWS Support và quy trình mở ticket hỗ trợ kỹ thuật hoặc tài khoản.\n- Tài liệu báo cáo: Dựng website Worklog cá nhân và thiết lập tự động hóa CI/CD với GitHub Actions.",
+          achievements: "1. Ý thức tổ chức & Tuân thủ quy định thực tập:\n- Nắm vững quy định giờ giấc làm việc, quy trình xin phép và hình thức điểm danh hàng ngày tại FCAJ Hồ Chí Minh.\n- Hiểu rõ bộ quy tắc ứng xử (Code of Conduct), quy định bảo mật dữ liệu doanh nghiệp và trách nhiệm của thực tập sinh.\n- Kích hoạt đầy đủ các kênh giao tiếp nội bộ và hoàn thành đăng ký hồ sơ trên portal.\n\n2. Quản trị tài khoản Cloud & Tối ưu an toàn thông tin:\n- Root Account Security: Đã khóa hoàn toàn việc sử dụng thông tin xác thực Root hàng ngày bằng cách kích hoạt ứng dụng xác thực MFA phần cứng/phần mềm.\n- IAM Best Practices: Khởi tạo IAM User cá nhân gán nhóm quyền AdministratorAccess, áp dụng chính sách mật khẩu phức tạp để thực hành thay cho Root.\n- Giám sát chi phí: Khởi tạo thành công AWS Budget theo dõi ngưỡng chi phí và CloudWatch Alarm qua SNS Topic để gửi email cảnh báo tức thì nếu phát sinh phí vượt ngân sách.\n- Quy trình hỗ trợ: Nắm vững cách phân loại sự cố và các bước gửi yêu cầu trợ giúp kỹ thuật qua AWS Support Center.\n\n3. Xây dựng nền tảng xuất bản tài liệu tự động:\n- Xây dựng cấu trúc dự án báo cáo dạng Static Site dựa trên giao diện chuẩn FCAJ.\n- Triển khai thành công quy trình CI/CD với GitHub Actions (deploy.yml) với đầy đủ quyền Pages và ID Token.\n- Khắc phục lỗi cấu hình triển khai ban đầu và chính thức đưa trang báo cáo hoạt động ổn định trên GitHub Pages.\n\n4. Đánh giá tiến độ & Kế hoạch tuần tiếp theo:\n- Tiến độ tuần 1: 100% Đạt - Hoàn thành đầy đủ các chỉ tiêu Onboarding, tài khoản Cloud và nền tảng website cá nhân theo đúng hạn.\n- Khó khăn & Giải pháp: Đã giải quyết - Gặp lỗi khởi tạo khi kích hoạt GitHub Actions trên GitHub Pages lần đầu; đã cấu hình đúng quyền ghi (permissions) và re-run thành công.\n- Mục tiêu tuần 2: Kế hoạch - Bắt đầu nghiên cứu các dịch vụ Compute & Networking cốt lõi của AWS (Amazon EC2, VPC, Subnet, Route Table, Security Group) và triển khai bài lab đầu tiên.",
           tasks: [
             {
               day: "2",
-              desc: "- Get acquainted with FCAJ mentors and members.\n- Learn about the FCAJ internship roadmap, working process, rules, and regulations.\n- Understand weekly worklog requirements and expected learning outcomes.\n- Complete the required process to receive AWS Free $100 Credit for hands-on labs.\n- Check the AWS learning environment and understand basic cost-control precautions.",
+              desc: "- Tham gia buổi Onboarding với mentor và đội ngũ FCAJ HCM.\n- Đọc, ghi nhớ và cam kết tuân thủ quy chế thực tập, tác phong làm việc.\n- Tạo và hoàn tất hồ sơ cá nhân trên hệ thống Portal thực tập.",
               start: "2026-09-14", end: "2026-09-14",
-              ref: "AWS Account: https://000001.awsstudygroup.com/\nAWS Budgets: https://000007.awsstudygroup.com/"
+              ref: "HCM Rules & Instructions"
             },
             {
               day: "3",
-              desc: "- Learn the fundamentals of Cloud Computing and Amazon Web Services (AWS).\n- Understand AWS Global Infrastructure: Region, Availability Zone, Edge Location.\n- Learn major AWS service groups: Compute, Storage, Networking, Database, Security, Monitoring.\n- Explore AWS Management Console and locate commonly used AWS services.\n- Practice switching AWS Regions and checking available services/resources.",
+              desc: "- Nghiên cứu chính sách tài khoản AWS Free Tier và cơ chế cấp credit.\n- Đăng ký thành công tài khoản AWS cá nhân cho kỳ thực tập.\n- Làm quen với AWS Management Console và cấu hình Region Singapore.",
               start: "2026-09-15", end: "2026-09-15",
-              ref: "First Cloud Journey: https://cloudjourney.awsstudygroup.com/"
+              ref: "AWS Free Tier Account Setup"
             },
             {
               day: "4",
-              desc: "- Learn about AWS Management Console and AWS CLI.\n- Install and configure AWS CLI on the local computer.\n- Configure Access Key, Secret Key, Default Region, and Output Format.\n- Practice basic CLI commands to check AWS identity, configuration, and available regions.\n- Use AWS CLI to retrieve EC2 information and compare results with AWS Console.\n- Understand the difference between managing AWS resources through Console and CLI.",
+              desc: "- Kích hoạt Multi-Factor Authentication (MFA) bảo vệ Root Account.\n- Tạo IAM User / Group quản trị thường nhật theo quy chuẩn Least Privilege.\n- Kích hoạt Billing Preferences, cấu hình AWS Budgets và CloudWatch Alarm.",
               start: "2026-09-16", end: "2026-09-16",
-              ref: "AWS CLI: https://000011.awsstudygroup.com/\nAWS Account: https://000001.awsstudygroup.com/"
+              ref: "AWS Budgets & Cost Alarm"
             },
             {
               day: "5",
-              desc: "- Learn basic concepts of Amazon EC2.\n- Study AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP, and Elastic IP.\n- Understand EC2 instance lifecycle: Pending, Running, Stopping, Stopped, Terminated.\n- Learn how SSH authentication works when connecting to EC2.\n- Learn the role of Security Groups in controlling inbound/outbound traffic.\n- Explore the EC2 Dashboard and available instance configurations.",
-              start: "2026-09-17", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              desc: "- Tìm hiểu mô hình AWS Support Center, thời gian SLA các gói hỗ trợ.\n- Thực hành các bước tạo Support Case khi gặp vấn đề dịch vụ/billing.\n- Nghiên cứu cấu trúc chuẩn của bộ tài liệu Worklog, Proposal, Workshop.",
+              start: "2026-09-17", end: "2026-09-17",
+              ref: "AWS Support Guide\nWorkshop Sample"
             },
             {
               day: "6",
-              desc: "- Practice launching an Amazon EC2 instance.\n- Configure AMI, Instance Type, Key Pair, Network, and Security Group.\n- Connect to the EC2 Linux instance through SSH.\n- Execute basic Linux commands and verify server status.\n- Create and attach an additional EBS volume to EC2.\n- Practice Start/Stop EC2 and check instance status using both AWS Console and AWS CLI.",
+              desc: "- Clone và thiết lập theme Worklog trên máy cá nhân.\n- Cấu hình pipeline GitHub Actions tự động build & deploy lên GitHub Pages.\n- Soạn thảo hoàn thiện nội dung Worklog Tuần 1 và đồng bộ lên trang web.",
               start: "2026-09-18", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              ref: "Hugo & Pages Deployment"
             }
           ]
         },
         en: {
-          objectives: "- Get acquainted with FCAJ members and understand the internship working process.\n- Complete the AWS Free $100 Credit registration for hands-on practice.\n- Understand fundamental AWS services and AWS global infrastructure.\n- Become familiar with AWS Management Console and AWS CLI.\n- Learn basic Amazon EC2 concepts and perform the first EC2 hands-on lab.",
-          achievements: "- Successfully completed the AWS Free $100 Credit registration for AWS hands-on activities.\n- Understood the basic concepts of Cloud Computing and AWS Global Infrastructure:\n  - Region\n  - Availability Zone\n  - Edge Location\n- Understood the major AWS service groups:\n  - Compute\n  - Storage\n  - Networking\n  - Database\n  - Security\n  - Monitoring\n- Became familiar with the AWS Management Console and learned how to:\n  - Search and access AWS services\n  - Switch AWS Regions\n  - View and manage AWS resources\n  - Check basic resource information\n- Successfully installed and configured AWS CLI, including:\n  - Access Key\n  - Secret Key\n  - Default Region\n  - Output Format\n- Used AWS CLI to:\n  - Verify AWS identity and account information\n  - Check CLI configuration\n  - Retrieve the list of AWS Regions\n  - View EC2 instances and instance states\n  - Manage/check EC2 Key Pairs\n  - Retrieve basic AWS resource information\n- Learned the fundamental components of Amazon EC2:\n  - AMI\n  - Instance Type\n  - EBS\n  - Key Pair\n  - Security Group\n  - Public/Private IP\n  - Elastic IP\n- Successfully launched and managed an EC2 instance.\n- Successfully connected to a Linux EC2 instance through SSH.\n- Created and attached an additional EBS volume to an EC2 instance.\n- Practiced managing EC2 using both AWS Console and AWS CLI.\n- Gained the ability to perform a complete basic workflow:\n  AWS Account → Console/CLI → EC2 → Security Group → SSH → EBS → Resource Management.",
+          objectives: "- Onboarding & Culture: Master HCM office rules, attendance regulations, security standards, and evaluation roadmap.\n- Foundational Cloud Infrastructure: Create AWS Free Tier account, configure Root MFA security, and set up IAM user access control.\n- Budget & Cost Control: Configure AWS Budgets and CloudWatch Billing Alarms to maintain a $0 learning expenditure.\n- Technical Support: Understand AWS Support plans and the formal procedure for opening technical and billing support cases.\n- Reporting Platform: Build a personal Worklog website and configure automated CI/CD deployment with GitHub Actions.",
+          achievements: "1. Organizational Discipline & Internship Compliance:\n- Mastered working hours, leave request procedures, and daily check-in protocols at FCAJ Ho Chi Minh.\n- Thoroughly understood the Code of Conduct, corporate data security policies, and intern responsibilities.\n- Successfully activated all internal communication channels and completed onboarding profile on the portal.\n\n2. Cloud Account Governance & Information Security Optimization:\n- Root Account Security: Fully locked daily usage of root credentials by enabling MFA authenticator applications.\n- IAM Best Practices: Created a personal IAM User assigned to AdministratorAccess group with strict password policies for operational tasks.\n- Cost Monitoring: Successfully configured AWS Budgets and CloudWatch Cost Alarm via SNS Topic to receive immediate email notifications on unexpected spend.\n- Support Workflow: Understood issue severity tiers and end-to-end procedures for creating technical/billing support cases in AWS Support Center.\n\n3. Automated Documentation & Publishing Platform:\n- Structured a modern static documentation reporting project adhering to FCAJ standards.\n- Successfully deployed CI/CD automation pipeline with GitHub Actions (deploy.yml) with proper Pages and ID Token permissions.\n- Resolved initial deployment configuration errors and officially published the live report site on GitHub Pages.\n\n4. Progress Review & Next Week Plan:\n- Week 1 Progress: 100% Achieved - Fulfilled all onboarding milestones, cloud accounts, and personal reporting platform on schedule.\n- Challenges & Solutions: Resolved - Addressed initial GitHub Actions workflow deployment permissions and successfully re-executed the pipeline.\n- Week 2 Objectives: Planned - Begin researching core AWS Compute & Networking services (Amazon EC2, VPC, Subnet, Route Table, Security Group) and execute foundational hands-on labs.",
           tasks: [
             {
               day: "2",
-              desc: "- Get acquainted with FCAJ mentors and members.\n- Learn about the FCAJ internship roadmap, working process, rules, and regulations.\n- Understand weekly worklog requirements and expected learning outcomes.\n- Complete the required process to receive AWS Free $100 Credit for hands-on labs.\n- Check the AWS learning environment and understand basic cost-control precautions.",
+              desc: "- Attend Onboarding session with mentors and the FCAJ HCM team.\n- Read, acknowledge, and commit to internship guidelines and workplace conduct.\n- Create and complete personal profile on the internship portal.",
               start: "2026-09-14", end: "2026-09-14",
-              ref: "AWS Account: https://000001.awsstudygroup.com/\nAWS Budgets: https://000007.awsstudygroup.com/"
+              ref: "HCM Rules & Instructions"
             },
             {
               day: "3",
-              desc: "- Learn the fundamentals of Cloud Computing and Amazon Web Services (AWS).\n- Understand AWS Global Infrastructure: Region, Availability Zone, Edge Location.\n- Learn major AWS service groups: Compute, Storage, Networking, Database, Security, Monitoring.\n- Explore AWS Management Console and locate commonly used AWS services.\n- Practice switching AWS Regions and checking available services/resources.",
+              desc: "- Study AWS Free Tier account policies and credit allocation mechanisms.\n- Successfully register a personal AWS account for the internship program.\n- Explore the AWS Management Console and configure Singapore Region.",
               start: "2026-09-15", end: "2026-09-15",
-              ref: "First Cloud Journey: https://cloudjourney.awsstudygroup.com/"
+              ref: "AWS Free Tier Account Setup"
             },
             {
               day: "4",
-              desc: "- Learn about AWS Management Console and AWS CLI.\n- Install and configure AWS CLI on the local computer.\n- Configure Access Key, Secret Key, Default Region, and Output Format.\n- Practice basic CLI commands to check AWS identity, configuration, and available regions.\n- Use AWS CLI to retrieve EC2 information and compare results with AWS Console.\n- Understand the difference between managing AWS resources through Console and CLI.",
+              desc: "- Activate Multi-Factor Authentication (MFA) to protect the Root Account.\n- Create IAM User / Group for daily operations following the principle of Least Privilege.\n- Enable Billing Preferences, configure AWS Budgets and CloudWatch Cost Alarm.",
               start: "2026-09-16", end: "2026-09-16",
-              ref: "AWS CLI: https://000011.awsstudygroup.com/\nAWS Account: https://000001.awsstudygroup.com/"
+              ref: "AWS Budgets & Cost Alarm"
             },
             {
               day: "5",
-              desc: "- Learn basic concepts of Amazon EC2.\n- Study AMI, Instance Type, EBS, Key Pair, Security Group, Public IP, Private IP, and Elastic IP.\n- Understand EC2 instance lifecycle: Pending, Running, Stopping, Stopped, Terminated.\n- Learn how SSH authentication works when connecting to EC2.\n- Learn the role of Security Groups in controlling inbound/outbound traffic.\n- Explore the EC2 Dashboard and available instance configurations.",
-              start: "2026-09-17", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              desc: "- Learn AWS Support Center model and SLA turnaround times across support tiers.\n- Practice opening a Support Case for service and billing inquiries.\n- Study the standard documentation structure for Worklog, Proposal, and Workshop.",
+              start: "2026-09-17", end: "2026-09-17",
+              ref: "AWS Support Guide\nWorkshop Sample"
             },
             {
               day: "6",
-              desc: "- Practice launching an Amazon EC2 instance.\n- Configure AMI, Instance Type, Key Pair, Network, and Security Group.\n- Connect to the EC2 Linux instance through SSH.\n- Execute basic Linux commands and verify server status.\n- Create and attach an additional EBS volume to EC2.\n- Practice Start/Stop EC2 and check instance status using both AWS Console and AWS CLI.",
+              desc: "- Clone and set up personal Worklog theme on local machine.\n- Configure GitHub Actions CI/CD pipeline to automatically build & deploy to GitHub Pages.\n- Finalize Week 1 Worklog documentation and publish to the live website.",
               start: "2026-09-18", end: "2026-09-18",
-              ref: "Amazon EC2: https://000004.awsstudygroup.com/\nIAM Roles for EC2: https://000048.awsstudygroup.com/"
+              ref: "Hugo & Pages Deployment"
             }
           ]
         }
@@ -836,8 +836,8 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v13';
-const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v12';
+const STORAGE_KEY = 'fcaj_report_bilingual_v14';
+const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v13';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -849,6 +849,7 @@ class AppLanguageManager {
 
   cleanupLegacyStorage() {
     const legacyKeys = [
+      'fcaj_report_bilingual_v13',
       'fcaj_report_bilingual_v12',
       'fcaj_report_bilingual_v1',
       'fcaj_report_bilingual_v2',
