@@ -633,25 +633,75 @@ const DEFAULT_BILINGUAL_DATA = {
       return {
         weekNum: 2,
         vi: {
-          objectives: "Nghiên cứu chuyên sâu về mạng Amazon VPC, phân chia Subnet, Route Table, NAT Gateway và Security Group.",
-          achievements: "- Thiết kế và triển khai kiến trúc VPC đa tầng gồm Public và Private Subnet.\n- Cấu hình Bastion Host và NAT Gateway giúp máy chủ nội bộ kết nối Internet an toàn.\n- Thiết lập và kiểm thử quy tắc tường lửa Security Group và Network ACL thành công.",
+          objectives: "- Kiến trúc mạng Amazon VPC: Nắm vững nguyên lý VPC, cấu trúc dải IP CIDR (/16, /24), quy tắc 5 IP bảo lưu và thiết kế Subnet đa vùng sẵn sàng (Multi-AZ).\n- Định tuyến & Kết nối Internet: Thiết lập Route Table, Internet Gateway (IGW) cho Public Subnet và giải pháp NAT Gateway cho Private Subnet.\n- Bảo mật mạng (Firewall in VPC): Phân biệt chi tiết cơ chế hoạt động của Security Group (Stateful, cấp Instance/ENI) và Network ACL (Stateless, cấp Subnet).\n- Dịch vụ máy chủ Amazon EC2: Tìm hiểu chu kỳ sống EC2, phân loại Instance Types (C, R, T, M), so sánh ổ đĩa EBS và Instance Store, bảo mật truy cập Key Pair.\n- Triển khai thực hành (Hands-on Lab): Xây dựng hoàn chỉnh kiến trúc mạng tùy chỉnh 2-Tier VPC và khởi tạo máy chủ EC2 kiểm tra luồng kết nối an toàn.",
+          achievements: "1. Nền tảng mạng chuyên sâu Amazon VPC:\n- Hiểu rõ kiến trúc phân chia dải mạng: Thiết kế VPC CIDR block 10.0.0.0/16 (65,536 địa chỉ) và chia thành các subnet /24 (251 IP khả dụng sau khi trừ 5 IP hệ thống).\n- Nắm vững mô hình High Availability (HA): Thiết kế Subnet trải dài trên tối thiểu 2 Availability Zones (AZ-a, AZ-b) để đảm bảo tính sẵn sàng cao cho ứng dụng.\n- Làm chủ cơ chế định tuyến Route Table: Cấu hình bảng định tuyến độc lập cho Public Subnet (qua IGW) và Private Subnet (chặn trực tiếp internet).\n\n2. Kiến trúc Bảo mật & Kiểm soát lưu lượng (Firewall in VPC):\n- Security Group (Lớp bảo vệ Instance): Nắm vững cơ chế Stateful (chỉ cần mở Inbound rule là gói tin phản hồi Outbound tự động được cho phép). Cấu hình rule truy cập giới hạn theo IP nguồn cụ thể (My IP).\n- Network ACL (Lớp bảo vệ Subnet): Nắm vững tính chất Stateless (phải mở cả Inbound và Outbound rules, bao gồm cổng Ephemeral 1024–65535). Đánh giá thứ tự rule theo số thứ tự (Rule number tăng dần).\n- Phối hợp đồng thời Security Group và NACL tạo thành mô hình phòng thủ chiều sâu (Defense-in-Depth) chặt chẽ cho hạ tầng Cloud.\n\n3. Điện toán máy chủ Amazon EC2 & Lưu trữ dữ liệu:\n- Hiểu cách lựa chọn họ máy chủ phù hợp với workload: dòng T/M cho web server thông thường, dòng C cho tính toán nặng, dòng R cho bộ nhớ đệm/database.\n- Phân biệt rõ ràng giữa EBS Volume (ổ cứng độc lập, bền vững, hỗ trợ snapshot) và Instance Store (ổ cứng gắn trực tiếp, tốc độ cao nhưng mất dữ liệu khi stop máy chủ).\n- Quản lý bảo mật máy chủ an toàn với Key Pair (.pem) và thực hành kết nối an toàn vào máy chủ qua SSH Terminal.\n\n4. Đánh giá tiến độ & Kế hoạch tuần tiếp theo:\n- Tiến độ tuần 2: 100% Đạt - Nắm vững toàn bộ lý thuyết cốt lõi về VPC, Subnets, Route Table, Firewall và hoàn thành khởi tạo máy chủ EC2 theo thiết kế.\n- Kỹ năng thu được: Thành thạo - Tự tay thiết kế và cấu hình topo mạng Multi-AZ trên AWS Console; thành thạo gán Security Group, định tuyến bảng Route và kết nối máy chủ qua SSH.\n- Mục tiêu tuần 3: Kế hoạch - Tiếp tục nghiên cứu dịch vụ lưu trữ đối tượng Amazon S3, cơ chế phân quyền S3 Bucket Policy, CORS và triển khai mô hình Static Website Hosting.",
           tasks: [
-            { day: "2", desc: "- Nghiên cứu quy hoạch dải mạng CIDR cho VPC\n- Phân chia Subnet và cấu hình Internet Gateway", start: "2026-09-21", end: "2026-09-21", ref: "AWS VPC User Guide" },
-            { day: "3", desc: "- Triển khai NAT Gateway\n- Cấu hình bảng định tuyến Private Route Table", start: "2026-09-22", end: "2026-09-22", ref: "https://docs.aws.amazon.com/vpc/" },
-            { day: "4", desc: "- Thực hành thiết lập Network ACL\n- So sánh NACL với Security Group theo nguyên tắc bảo mật tối thiểu", start: "2026-09-23", end: "2026-09-23", ref: "AWS Well-Architected Security" },
-            { day: "5", desc: "- Khởi tạo máy chủ EC2 trong Private Subnet\n- Kiểm tra kết nối Internet qua NAT Gateway", start: "2026-09-24", end: "2026-09-24", ref: "Internal Lab Guide" },
-            { day: "6", desc: "- Báo cáo tiến độ Sprint Review\n- Trao đổi 1-on-1 hàng tuần với Mentor", start: "2026-09-25", end: "2026-09-25", ref: "Weekly Assessment" }
+            {
+              day: "2",
+              desc: "- Tìm hiểu khái niệm tổng quan Amazon VPC, phân biệt Default VPC và Custom VPC.\n- Nghiên cứu quy tắc phân bổ dải mạng CIDR Block (IPv4) cho VPC (ví dụ 10.0.0.0/16).\n- Tìm hiểu nguyên lý chia Subnet và quy tắc AWS bảo lưu 5 địa chỉ IP trong mỗi subnet (.0, .1, .2, .3, .255).",
+              start: "2026-09-21", end: "2026-09-21",
+              ref: "VPC Subnets Overview\nFCAJ Week 2 Sample"
+            },
+            {
+              day: "3",
+              desc: "- Nghiên cứu cơ chế định tuyến với Route Table (Main Route Table vs Custom Route Table).\n- Cấu hình Internet Gateway (IGW), đính kèm vào VPC và trỏ route 0.0.0.0/0 cho Public Subnet.\n- Tìm hiểu vai trò, cơ chế hoạt động và cách triển khai NAT Gateway trong Public Subnet để cấp internet cho Private Subnet.",
+              start: "2026-09-22", end: "2026-09-22",
+              ref: "Route Table Guide\nNAT Gateway Setup"
+            },
+            {
+              day: "4",
+              desc: "- So sánh chi tiết hai lớp tường lửa trên AWS: Security Group vs Network ACL (NACL).\n- Tìm hiểu tính chất Stateful của Security Group (tự động cho phép traffic phản hồi).\n- Tìm hiểu tính chất Stateless và quy tắc số thứ tự (Rule number) của NACL ở cấp độ Subnet.\n- Thiết kế quy tắc Inbound/Outbound tối ưu theo nguyên tắc bảo mật phòng thủ chiều sâu.",
+              start: "2026-09-23", end: "2026-09-23",
+              ref: "Security Groups\nNetwork ACLs"
+            },
+            {
+              day: "5",
+              desc: "- Thực hành bài lab: Khởi tạo Custom VPC (10.0.0.0/16) trải rộng 2 Availability Zones.\n- Tạo 2 Public Subnets và 2 Private Subnets, gán Route Tables tương ứng.\n- Tạo và gán Internet Gateway; thiết lập Security Group cho phép HTTP (Port 80) và SSH (Port 22 từ My IP).",
+              start: "2026-09-24", end: "2026-09-24",
+              ref: "VPC Preparation Lab\nCreate Security Group"
+            },
+            {
+              day: "6",
+              desc: "- Tìm hiểu dịch vụ Amazon EC2: Các nhóm cấu hình (General Purpose, Compute, Memory, Storage), chu kỳ sống instance (Lifecycle).\n- Khởi tạo máy chủ EC2 trong Public Subnet, cấu hình Key Pair bảo mật và Security Group.\n- Thực hành kết nối an toàn vào máy chủ qua SSH Terminal và kiểm tra luồng kết nối Internet.",
+              start: "2026-09-25", end: "2026-09-25",
+              ref: "Deploy EC2 Server"
+            }
           ]
         },
         en: {
-          objectives: "Deep dive into VPC Networking, Subnets, Routing, NAT Gateway and Security Groups.",
-          achievements: "- Designed and deployed a multi-tier VPC architecture with Public and Private Subnets.\n- Configured Bastion Host and NAT Gateway for secure outbound internet access.\n- Tested security group inbound and outbound firewall rules successfully.",
+          objectives: "- Amazon VPC Network Architecture: Master VPC principles, CIDR block IPv4 structures (/16, /24), the 5 AWS reserved IPs rule, and Multi-AZ subnet design.\n- Routing & Internet Connectivity: Configure Route Tables, attach Internet Gateway (IGW) for Public Subnets, and implement NAT Gateway solutions for Private Subnets.\n- Network Security (Firewalls in VPC): Deeply analyze and contrast the mechanisms of Security Groups (Stateful, Instance/ENI level) and Network ACLs (Stateless, Subnet level).\n- Amazon EC2 Compute Services: Explore the EC2 lifecycle, classify Instance Families (C, R, T, M), compare EBS Volumes vs Instance Store, and secure access with Key Pairs.\n- Hands-on Lab Implementation: Build an end-to-end custom 2-Tier VPC network architecture and launch an EC2 instance to verify secure network connectivity.",
+          achievements: "1. Advanced Amazon VPC Network Infrastructure:\n- Mastered IP Subnetting Architecture: Designed VPC CIDR block 10.0.0.0/16 (65,536 addresses) and partitioned into /24 subnets (251 usable IPs after reserving 5 system IPs).\n- High Availability (HA) Model: Deployed subnets spanning across at least 2 Availability Zones (AZ-a, AZ-b) to guarantee high availability for cloud applications.\n- Route Table Mastery: Implemented isolated route tables for Public Subnet (routed via IGW) and Private Subnet (blocking direct internet access).\n\n2. Security Architecture & Traffic Control (Firewall in VPC):\n- Security Group (Instance Protection Layer): Mastered stateful behavior (opening inbound rule automatically permits return outbound response packets). Configured ingress rules restricted to specific source IP (My IP).\n- Network ACL (Subnet Protection Layer): Mastered stateless behavior (requires opening both Inbound and Outbound rules, including Ephemeral ports 1024–65535). Rules evaluated sequentially in ascending Rule Number order.\n- Coordinated Security Group and NACL simultaneously to build a stringent Defense-in-Depth cloud security architecture.\n\n3. Amazon EC2 Compute & Data Storage Operations:\n- Selected optimal instance families based on workload patterns: T/M series for general web servers, C series for compute-intensive workloads, and R series for caching/databases.\n- Clearly differentiated between EBS Volume (independent, durable persistent block storage supporting snapshots) and Instance Store (physically attached, ephemeral high I/O storage that loses data on instance stop).\n- Enforced server security management using Key Pair (.pem) and practiced secure connectivity via SSH Terminal.\n\n4. Progress Review & Next Week Plan:\n- Week 2 Progress: 100% Achieved - Fully mastered foundational theory of VPC, Subnets, Route Tables, Firewalls, and successfully deployed EC2 instances per architectural design.\n- Acquired Skills: Proficient - Independently designed and configured Multi-AZ network topology on AWS Console; proficient in Security Group assignment, Route Table routing, and SSH connectivity.\n- Week 3 Objectives: Planned - Continue researching Amazon S3 object storage service, S3 Bucket Policy permissions, CORS, and deploying a Static Website Hosting model.",
           tasks: [
-            { day: "2", desc: "- Study VPC CIDR planning, IPv4 subnetting\n- Configure Internet Gateway routing", start: "2026-09-21", end: "2026-09-21", ref: "AWS VPC User Guide" },
-            { day: "3", desc: "- Deploy NAT Gateway\n- Configure Private Route Tables", start: "2026-09-22", end: "2026-09-22", ref: "https://docs.aws.amazon.com/vpc/" },
-            { day: "4", desc: "- Practice setting up Network Access Control Lists (NACLs) vs Security Groups\n- Apply principle of least privilege", start: "2026-09-23", end: "2026-09-23", ref: "AWS Well-Architected Security Pillar" },
-            { day: "5", desc: "- Setup EC2 inside Private Subnet\n- Verify internet connectivity via NAT Gateway", start: "2026-09-24", end: "2026-09-24", ref: "Internal Lab Guide" },
-            { day: "6", desc: "- Sprint Review & Weekly 1-on-1 with Mentor", start: "2026-09-25", end: "2026-09-25", ref: "Weekly Assessment" }
+            {
+              day: "2",
+              desc: "- Explore Amazon VPC overview and distinguish between Default VPC and Custom VPC.\n- Study CIDR block (IPv4) allocation rules for VPC (e.g., 10.0.0.0/16).\n- Learn subnet partitioning principles and the 5 AWS reserved IP addresses in each subnet (.0, .1, .2, .3, .255).",
+              start: "2026-09-21", end: "2026-09-21",
+              ref: "VPC Subnets Overview\nFCAJ Week 2 Sample"
+            },
+            {
+              day: "3",
+              desc: "- Research routing mechanisms with Route Tables (Main Route Table vs Custom Route Table).\n- Configure and attach Internet Gateway (IGW) to VPC, routing 0.0.0.0/0 for Public Subnet.\n- Understand the role, mechanics, and deployment of NAT Gateway in Public Subnet to grant internet egress for Private Subnet.",
+              start: "2026-09-22", end: "2026-09-22",
+              ref: "Route Table Guide\nNAT Gateway Setup"
+            },
+            {
+              day: "4",
+              desc: "- Conduct detailed comparison between AWS firewall layers: Security Group vs Network ACL (NACL).\n- Understand Stateful property of Security Groups (automatic return traffic allowance).\n- Understand Stateless property and Rule Number ordering of NACL at subnet tier.\n- Design optimal Inbound/Outbound rules adhering to Defense-in-Depth security principles.",
+              start: "2026-09-23", end: "2026-09-23",
+              ref: "Security Groups\nNetwork ACLs"
+            },
+            {
+              day: "5",
+              desc: "- Execute hands-on lab: Initialize Custom VPC (10.0.0.0/16) spanning 2 Availability Zones.\n- Create 2 Public Subnets and 2 Private Subnets, associating corresponding Route Tables.\n- Create and attach Internet Gateway; configure Security Group permitting HTTP (Port 80) and SSH (Port 22 from My IP).",
+              start: "2026-09-24", end: "2026-09-24",
+              ref: "VPC Preparation Lab\nCreate Security Group"
+            },
+            {
+              day: "6",
+              desc: "- Explore Amazon EC2 service: Instance configuration families (General Purpose, Compute, Memory, Storage) and instance lifecycle.\n- Launch EC2 instance in Public Subnet, configuring secure Key Pair and Security Group.\n- Practice secure SSH connection to the server via Terminal and verify outbound internet connectivity.",
+              start: "2026-09-25", end: "2026-09-25",
+              ref: "Deploy EC2 Server"
+            }
           ]
         }
       };
@@ -836,8 +886,8 @@ const DEFAULT_BILINGUAL_DATA = {
 // ==========================================
 // 3. PERSISTENCE & STATE MANAGEMENT
 // ==========================================
-const STORAGE_KEY = 'fcaj_report_bilingual_v15';
-const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v14';
+const STORAGE_KEY = 'fcaj_report_bilingual_v16';
+const PREV_STORAGE_KEY = 'fcaj_report_bilingual_v15';
 const LANG_KEY = 'fcaj_report_lang';
 
 class AppLanguageManager {
@@ -849,6 +899,7 @@ class AppLanguageManager {
 
   cleanupLegacyStorage() {
     const legacyKeys = [
+      'fcaj_report_bilingual_v15',
       'fcaj_report_bilingual_v14',
       'fcaj_report_bilingual_v13',
       'fcaj_report_bilingual_v12',
