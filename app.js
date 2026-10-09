@@ -1310,19 +1310,15 @@ function renderWorklogView() {
     if (!content.tasks || content.tasks.length === 0) {
       tbody.innerHTML = `
         <tr>
-          <td colspan="6" style="text-align:center; padding: 32px 16px; color: #64748B;">
-            <div style="font-size: 14px; margin-bottom: 10px;">${t('emptyTasksMsg')}</div>
-            <button type="button" class="btn btn-outline btn-sm" onclick="openAddTaskModal()">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              ${t('btnAddTaskThisWeek')}
-            </button>
+          <td colspan="5" style="text-align:center; padding: 32px 16px; color: #64748B;">
+            <div style="font-size: 14px;">${t('emptyTasksMsg')}</div>
           </td>
         </tr>
       `;
       return;
     }
 
-    tbody.innerHTML = content.tasks.map((task, idx) => `
+    tbody.innerHTML = content.tasks.map((task) => `
       <tr>
         <td style="font-weight:700; text-align:center; vertical-align:top; font-size:14px; padding-top:14px;">${escapeHtml(task.day)}</td>
         <td style="white-space:pre-wrap; line-height: 1.6; font-size:13.5px; vertical-align:top; padding-top:14px;">${escapeHtml(task.desc)}</td>
@@ -1330,16 +1326,6 @@ function renderWorklogView() {
         <td style="white-space:nowrap; font-size:13px; color:var(--text-subtle); vertical-align:top; padding-top:14px;">${escapeHtml(formatWorklogDate(task.end))}</td>
         <td style="vertical-align:top; padding-top:14px;">
           ${renderRefLinks(task.ref)}
-        </td>
-        <td style="text-align:right; white-space:nowrap; vertical-align:top; padding-top:14px;">
-          <button type="button" class="btn-table-action btn-table-edit" title="${t('btnEdit')}" onclick="openEditTaskModal(${idx})">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            <span>${t('btnEdit')}</span>
-          </button>
-          <button type="button" class="btn-table-action btn-table-delete" title="${t('btnDelete')}" onclick="deleteWeekTask(${idx})">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-            <span>${t('btnDelete')}</span>
-          </button>
         </td>
       </tr>
     `).join('');
