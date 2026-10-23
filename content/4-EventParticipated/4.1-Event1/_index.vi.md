@@ -65,32 +65,32 @@ pre: " <b> 4.1. </b> "
 #### 📸 Ảnh 1: Cấu trúc SOUL.md — Thành phần cốt lõi và định hình Agent
 Ảnh trình bày chi tiết về phần mở đầu của tệp cấu hình `SOUL.md`: Thiết lập nhân dạng (Identity), năng lực chuyên môn (Expertise), và nguyên tắc định hình nhân cách vận hành cho AI Agent.
 
-![Cấu trúc SOUL.md - Thành phần cốt lõi](/images/4-EventParticipated/4.1-Event1/soul_structure_1.jpg)
+![Cấu trúc SOUL.md - Thành phần cốt lõi](images/soul_structure_1.jpg)
 
 ---
 
 #### 📸 Ảnh 2: Cấu trúc SOUL.md — Tone & Style, Scope, Anti-patterns và Out of Scope
 Ảnh trình bày chi tiết về các quy định hành vi nghiêm ngặt: Văn phong phản hồi (Tone & Style), phạm vi thẩm quyền (Scope), các lỗi hành vi cần triệt tiêu (Anti-patterns) và các nhiệm vụ ngoài phạm vi (Out of Scope).
 
-![Cấu trúc SOUL.md - Quy tắc hành vi](/images/4-EventParticipated/4.1-Event1/soul_structure_2.jpg)
+![Cấu trúc SOUL.md - Quy tắc hành vi](images/soul_structure_2.jpg)
 
 ---
 
 #### 📸 Ảnh 3: Không gian sự kiện và các bạn thực tập sinh tham gia tại AWS HCM
 Toàn cảnh hội trường tại Văn phòng AWS Việt Nam (Tầng 26, Bitexco Financial Tower). Các bạn thực tập sinh FCAJ tập trung lắng nghe phần trình bày lộ trình và chia sẻ kỹ thuật.
 
-![Không gian sự kiện và thực tập sinh tham gia](/images/4-EventParticipated/4.1-Event1/event_participants.png)
+![Không gian sự kiện và thực tập sinh tham gia](images/event_participants.png)
 
 ---
 
 #### 📸 Ảnh 4: Các bạn nhận quà khi tham gia thảo luận Q&A về Triage Bot
 Không khí hào hứng trong phiên hỏi đáp: Các bạn thực tập sinh tích cực đặt câu hỏi chuyên sâu về cơ chế phân loại của Triage Bot và nhận quà lưu niệm từ diễn giả cũng như đại diện CMC Global.
 
-![Nhận quà trong phiên hỏi đáp Q&A](/images/4-EventParticipated/4.1-Event1/qa_gift_session.png)
+![Nhận quà trong phiên hỏi đáp Q&A](images/qa_gift_session.png)
 
 ---
 
 #### 📸 Ảnh 5: Cấu trúc kiến trúc toàn cảnh dự án Triage Bot (Market Slack Bot)
 Sơ đồ kiến trúc thực chiến *"THE FULL PICTURE: Each piece answered a question I actually faced"*: Minh họa luồng dữ liệu liên hoàn từ Slack Socket Mode, Response Gate, Claude Code, Memory context, bot-schedule, Internal API, Cron job đến cơ sở dữ liệu.
 
-![Cấu trúc kiến trúc Triage Bot](/images/4-EventParticipated/4.1-Event1/triage_bot_architecture.jpg)
+![Cấu trúc kiến trúc Triage Bot](images/triage_bot_architecture.jpg)

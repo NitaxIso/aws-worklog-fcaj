@@ -65,32 +65,32 @@ pre: " <b> 4.1. </b> "
 #### 📸 Photo 1: SOUL.md Structure — Core Persona & Foundation
 Detailed slide explaining the foundational components of the `SOUL.md` configuration: Identity, Expertise, and behavioral principles.
 
-![SOUL.md Structure - Core Persona](/images/4-EventParticipated/4.1-Event1/soul_structure_1.jpg)
+![SOUL.md Structure - Core Persona](images/soul_structure_1.jpg)
 
 ---
 
 #### 📸 Photo 2: SOUL.md Structure — Tone & Style, Scope, Anti-patterns, and Out of Scope
 Detailed slide covering strict behavioral boundaries: Tone & Style, Operational Scope, Anti-patterns, and Out-of-Scope boundaries.
 
-![SOUL.md Structure - Guardrails](/images/4-EventParticipated/4.1-Event1/soul_structure_2.jpg)
+![SOUL.md Structure - Guardrails](images/soul_structure_2.jpg)
 
 ---
 
 #### 📸 Photo 3: Event Space & Attendees at AWS Vietnam HCM
 Panoramic view of the event hall at AWS Vietnam (26th Floor, Bitexco Financial Tower). Interns engaged in the roadmap and technical sharing session.
 
-![Event Space and Attendees](/images/4-EventParticipated/4.1-Event1/event_participants.png)
+![Event Space and Attendees](images/event_participants.png)
 
 ---
 
 #### 📸 Photo 4: Interns Receiving Gifts During Q&A on Triage Bot
 Engaging Q&A session: Interns asking deep technical questions about Triage Bot routing mechanisms and receiving commemorative gifts from CMC Global.
 
-![Q&A Gift Session](/images/4-EventParticipated/4.1-Event1/qa_gift_session.png)
+![Q&A Gift Session](images/qa_gift_session.png)
 
 ---
 
 #### 📸 Photo 5: Full Architectural Blueprint of Triage Bot (Market Slack Bot)
 Architectural diagram *"THE FULL PICTURE: Each piece answered a question I actually faced"*: Illustrating the end-to-end flow from Slack Socket Mode, Response Gate, Claude Code, Memory context, bot-schedule, Internal APIs, Cron triggers, to DB storage.
 
-![Triage Bot Full Architecture](/images/4-EventParticipated/4.1-Event1/triage_bot_architecture.jpg)
+![Triage Bot Full Architecture](images/triage_bot_architecture.jpg)
