@@ -20,8 +20,6 @@ chapter: false
 
 &emsp; **Major:** Information Assurance
 
-&emsp; **Class:** AWS092026
-
 &emsp; **Internship Company:** Amazon Web Services (AWS) Vietnam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)

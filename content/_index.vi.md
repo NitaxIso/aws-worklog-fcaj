@@ -20,8 +20,6 @@ chapter: false
 
 &emsp; **Ngành:** An toàn thông tin
 
-&emsp; **Lớp:** AWS092026
-
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services (AWS) Việt Nam
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)

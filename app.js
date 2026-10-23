@@ -538,7 +538,7 @@ const DEFAULT_BILINGUAL_DATA = {
     studentId: "SE190809",
     phone: "0347047101",
     email: "lecongluyen9a1@gmail.com",
-    className: "AWS092026",
+    className: "",
     avatarDataUrl: "",
     vi: {
       university: "Trường Đại học FPT",
@@ -763,33 +763,53 @@ const DEFAULT_BILINGUAL_DATA = {
     en: { title: "", date: "", url: "", summary: "", content: "" }
   })),
 
-  // SECTION 4: EVENTS PARTICIPATED (4.1, 4.2, 4.3 - Empty by default)
-  eventEntries: [1, 2, 3].map(num => ({
-    num,
-    photos: [],
-    vi: {
-      name: "",
-      time: "",
-      location: "",
-      role: "",
-      purpose: "",
-      speakers: "",
-      highlights: "",
-      learnings: "",
-      experience: ""
+  // SECTION 4: EVENTS PARTICIPATED (4.1 Event 1 Populated; 4.2 & 4.3 Planned)
+  eventEntries: [
+    {
+      num: 1,
+      photos: [
+        { url: "static/images/4-EventParticipated/4.1-Event1/soul_structure_1.jpg", caption: "Ảnh 1: Cấu trúc SOUL.md — Thành phần cốt lõi và định hình Agent", captionEn: "Photo 1: SOUL.md Structure — Core components & Agent persona" },
+        { url: "static/images/4-EventParticipated/4.1-Event1/soul_structure_2.jpg", caption: "Ảnh 2: Cấu trúc SOUL.md — Tone & Style, Scope, Anti-patterns và Out of Scope", captionEn: "Photo 2: SOUL.md Structure — Tone & Style, Scope, Anti-patterns & Out of Scope" },
+        { url: "static/images/4-EventParticipated/4.1-Event1/event_participants.png", caption: "Ảnh 3: Không gian sự kiện và các bạn thực tập sinh tham gia tại AWS HCM", captionEn: "Photo 3: Event space & attendees at AWS Vietnam HCM" },
+        { url: "static/images/4-EventParticipated/4.1-Event1/qa_gift_session.png", caption: "Ảnh 4: Các bạn nhận quà khi tham gia thảo luận Q&A về Triage Bot", captionEn: "Photo 4: Interns receiving gifts during Q&A on Triage Bot" },
+        { url: "static/images/4-EventParticipated/4.1-Event1/triage_bot_architecture.jpg", caption: "Ảnh 5: Cấu trúc kiến trúc toàn cảnh dự án Triage Bot (Market Slack Bot)", captionEn: "Photo 5: Full architectural blueprint of Triage Bot (Market Slack Bot)" }
+      ],
+      vi: {
+        name: "FCAJ Buildrathon Kickoff",
+        time: "08:30 – 12:00, Thứ Bảy, 26/09/2026",
+        location: "Văn phòng AWS Việt Nam, Tầng 26, Tháp Bitexco Financial Tower, Số 2 Hải Triều, Bến Nghé, Quận 1, TP.HCM",
+        role: "Thực tập sinh tham dự (Workforce Bootcamp Intern)",
+        purpose: "Lễ khởi động chính thức chuỗi hoạt động First Cloud AI Journey (FCAJ) Buildrathon, kết nối cộng đồng thực tập sinh đám mây, phổ biến lộ trình đào tạo và chia sẻ bài học thực chiến phát triển AI Agent tự động hóa vận hành cùng đối tác CMC Global.",
+        speakers: "- Ban tổ chức First Cloud AI Journey (FCAJ)\n- Đại diện đối tác công nghệ CMC Global\n- Diễn giả anh Trường – Lead Technical Architect chia sẻ kiến trúc AI Agent & Triage Bot",
+        highlights: "1. Tổng quan lộ trình FCAJ Buildrathon và các mốc đánh giá năng lực Cloud & AI.\n2. Bài toán thực tiễn về khoảng cách giao tiếp giữa Business Analyst (BA ở nước ngoài) và Đội ngũ Kỹ sư (Engineer tại Việt Nam), cùng giải pháp tự động hóa bằng AI Agent.\n3. Mô hình Triage Bot: Tiếp nhận yêu cầu, phân loại và điều phối ticket tự động qua Slack Socket Mode.\n4. Kỹ thuật thiết kế tệp cấu hình SOUL.md: Thiết lập nhân dạng (Identity), chuyên môn (Expertise), phong cách ngôn từ (Tone & Style), giới hạn phạm vi (Scope), hành vi cấm kỵ (Anti-patterns), và các vấn đề ngoài thẩm quyền (Out of Scope).\n5. Kiến trúc hoàn chỉnh của Market Slack Bot: Kết hợp Slack API, Response Gate, Claude Code, Memory context, bot-schedule, Internal API, Cron job và Database.",
+        learnings: "1. Nắm bắt tầm quan trọng của Guardrails và System Prompt chuẩn mực thông qua SOUL.md để kiểm soát chất lượng phản hồi của LLM.\n2. Hiểu rõ kiến trúc Triage Bot trong môi trường Production: Tách biệt lớp tiếp nhận sự kiện (Slack Socket Mode) với lớp xử lý nghiệp vụ thông minh và cơ sở dữ liệu phân tán.\n3. Rèn luyện tư duy đặt câu hỏi kỹ thuật, giao lưu trực tiếp với diễn giả và các bạn thực tập sinh để mở rộng góc nhìn về ứng dụng Cloud & GenAI.",
+        experience: "Buổi Kickoff tại Bitexco mang lại không khí tràn đầy năng lượng, môi trường văn phòng AWS chuyên nghiệp và góc nhìn công nghệ sâu sắc. Các phần thảo luận Q&A sôi nổi cùng phần quà từ CMC Global đã tạo động lực rất lớn cho hành trình thực tập phía trước."
+      },
+      en: {
+        name: "FCAJ Buildrathon Kickoff",
+        time: "08:30 – 12:00, Saturday, 26/09/2026",
+        location: "AWS Vietnam Office, 26th Floor, Bitexco Financial Tower, 2 Hai Trieu, Ben Nghe, District 1, HCMC",
+        role: "Workforce Bootcamp Intern (Attendee)",
+        purpose: "Kickoff ceremony for the First Cloud AI Journey (FCAJ) Buildrathon, onboarding interns onto the cloud roadmap, and practical sharing on building autonomous enterprise AI Agents with tech partner CMC Global.",
+        speakers: "- First Cloud AI Journey (FCAJ) Organizing Team\n- Technology Partner Representatives from CMC Global\n- Speaker Mr. Truong – Lead Technical Architect sharing on AI Agent & Triage Bot architectures",
+        highlights: "1. Overview of the FCAJ Buildrathon roadmap and internship evaluation milestones.\n2. Real-world communication barrier between overseas Business Analysts and VN Engineering teams, and resolution via automated AI Agents.\n3. Triage Bot architecture: Ingesting, classifying, and triaging requests automatically via Slack Socket Mode.\n4. Design of SOUL.md configuration: Identity, Expertise, Tone & Style, Scope, Anti-patterns, and Out-of-Scope boundaries.\n5. Full architectural blueprint of Market Slack Bot: Ingesting events through Slack API, filtering via Response Gate, orchestrating via Claude Code, Memory context, Internal APIs, Cron triggers, and DB persistence.",
+        learnings: "1. Understood system prompt guardrails via SOUL.md to govern enterprise LLM behavior.\n2. Mastered architectural patterns of decoupling event listeners (Socket Mode) from inference and persistent storage.\n3. Enhanced technical questioning skills and expanded network with mentors, speakers, and fellow interns.",
+        experience: "The kickoff event at Bitexco was inspiring and energized. The professional AWS office atmosphere and interactive Q&A session with CMC Global gifts provided strong momentum for the upcoming bootcamp."
+      }
     },
-    en: {
-      name: "",
-      time: "",
-      location: "",
-      role: "",
-      purpose: "",
-      speakers: "",
-      highlights: "",
-      learnings: "",
-      experience: ""
+    {
+      num: 2,
+      photos: [],
+      vi: { name: "", time: "", location: "", role: "", purpose: "", speakers: "", highlights: "", learnings: "", experience: "" },
+      en: { name: "", time: "", location: "", role: "", purpose: "", speakers: "", highlights: "", learnings: "", experience: "" }
+    },
+    {
+      num: 3,
+      photos: [],
+      vi: { name: "", time: "", location: "", role: "", purpose: "", speakers: "", highlights: "", learnings: "", experience: "" },
+      en: { name: "", time: "", location: "", role: "", purpose: "", speakers: "", highlights: "", learnings: "", experience: "" }
     }
-  })),
+  ],
 
   // SECTION 5: WORKSHOP (5.1 to 5.6 - Empty by default)
   workshopChapters: ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6"].map(code => ({
@@ -898,10 +918,16 @@ class AppLanguageManager {
         const parsed = JSON.parse(stored);
         if (parsed && parsed.worklogs && parsed.worklogs.length === 12) {
           if (!parsed.blogEntries) parsed.blogEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogEntries));
-          if (!parsed.eventEntries) parsed.eventEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries));
+          if (!parsed.eventEntries) {
+            parsed.eventEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries));
+          } else if (parsed.eventEntries[0] && (!parsed.eventEntries[0].vi || !parsed.eventEntries[0].vi.name || !parsed.eventEntries[0].photos || parsed.eventEntries[0].photos.length === 0)) {
+            parsed.eventEntries[0] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[0]));
+          }
           if (!parsed.workshopChapters) parsed.workshopChapters = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.workshopChapters));
           if (!parsed.selfEvaluation) parsed.selfEvaluation = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.selfEvaluation));
-          if (!parsed.studentInfo.className) parsed.studentInfo.className = "AWS092026";
+          if (parsed.studentInfo) {
+            if (parsed.studentInfo.className === "AWS092026") parsed.studentInfo.className = "";
+          }
           return parsed;
         }
       }
@@ -1423,7 +1449,7 @@ function renderStudentInfoModule() {
   setVal('info-student-id', info.studentId);
   setVal('info-phone', info.phone);
   setVal('info-email', info.email);
-  setVal('info-class', info.className || 'AWS092026');
+  setVal('info-class', info.className || '');
   setVal('info-university', loc.university);
   setVal('info-major', loc.major);
   setVal('info-company', loc.company);
@@ -1440,7 +1466,7 @@ function renderStudentInfoModule() {
       { label: t('labelEmail'), val: info.email },
       { label: t('labelUniversity'), val: loc.university },
       { label: t('labelMajor'), val: loc.major },
-      { label: t('labelClass'), val: info.className || 'AWS092026' },
+      ...(info.className ? [{ label: t('labelClass'), val: info.className }] : []),
       { label: t('labelCompany'), val: loc.company },
       { label: t('labelPosition'), val: loc.position },
       { label: t('labelDuration'), val: loc.duration }
@@ -1479,7 +1505,7 @@ function renderStudentInfoModule() {
   const capName = document.getElementById('avatar-caption-name');
   if (capName) capName.textContent = info.fullName || 'Lê Công Luyến';
   const capId = document.getElementById('avatar-caption-id');
-  if (capId) capId.textContent = `${isVi ? 'MSSV' : 'ID'}: ${info.studentId || 'SE190809'} • ${info.className || 'AWS092026'}`;
+  if (capId) capId.textContent = `${isVi ? 'MSSV' : 'ID'}: ${info.studentId || 'SE190809'}${info.className ? ' • ' + info.className : ''}`;
 
   // Sync Hero Banner & Sidebar Profile
   const heroName = document.getElementById('hero-student-name');
@@ -2351,12 +2377,16 @@ function renderEventsRoute() {
 
     const photosHtml = photos.length > 0
       ? `<div class="event-photos-grid">
-           ${photos.map((src, idx) => `
+           ${photos.map((item, idx) => {
+             const src = typeof item === 'string' ? item : (item && item.url ? item.url : '');
+             const cap = typeof item === 'string' ? `Ảnh ${idx + 1}` : (item ? (isVi ? (item.caption || '') : (item.captionEn || item.caption || '')) : '');
+             return `
              <div class="event-photo-card">
-               <img src="${src}" alt="Event ${evNum} Photo ${idx + 1}">
+               <img src="${src}" alt="${escapeHtml(cap || `Event ${evNum} Photo ${idx + 1}`)}" onclick="window.open('${src}', '_blank')" style="cursor: zoom-in;" title="${escapeHtml(cap || 'Click để xem ảnh kích thước gốc')}">
+               ${cap ? `<div class="event-photo-caption" style="padding: 8px 10px; font-size: 11.5px; line-height: 1.4; color: var(--text-secondary); background: #ffffff; border-top: 1px solid var(--border-light); font-weight: 500;">${escapeHtml(cap)}</div>` : ''}
                ${isEditing ? `<button type="button" class="event-photo-remove" onclick="removeEventPhoto(${evNum}, ${idx})">✕</button>` : ''}
-             </div>
-           `).join('')}
+             </div>`;
+           }).join('')}
          </div>`
       : renderPlannedCallout(
           isVi
