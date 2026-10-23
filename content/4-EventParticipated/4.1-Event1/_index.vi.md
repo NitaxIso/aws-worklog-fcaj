@@ -94,3 +94,10 @@ Không khí hào hứng trong phiên hỏi đáp: Các bạn thực tập sinh t
 Sơ đồ kiến trúc thực chiến *"THE FULL PICTURE: Each piece answered a question I actually faced"*: Minh họa luồng dữ liệu liên hoàn từ Slack Socket Mode, Response Gate, Claude Code, Memory context, bot-schedule, Internal API, Cron job đến cơ sở dữ liệu.
 
 ![Cấu trúc kiến trúc Triage Bot](images/triage_bot_architecture.jpg)
+
+---
+
+#### 📸 Ảnh 6: Chụp ảnh lưu niệm và giao lưu cùng diễn giả
+Khoảnh khắc giao lưu, chụp ảnh kỷ niệm đáng nhớ của nhóm thực tập sinh cùng diễn giả tại văn phòng AWS Việt Nam sau khi kết thúc buổi chia sẻ kỹ thuật.
+
+![Chụp ảnh và giao lưu với diễn giả](images/speaker_networking.jpg)

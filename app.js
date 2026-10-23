@@ -772,7 +772,8 @@ const DEFAULT_BILINGUAL_DATA = {
         { url: "static/images/4-EventParticipated/4.1-Event1/soul_structure_2.jpg", caption: "Ảnh 2: Cấu trúc SOUL.md — Tone & Style, Scope, Anti-patterns và Out of Scope", captionEn: "Photo 2: SOUL.md Structure — Tone & Style, Scope, Anti-patterns & Out of Scope" },
         { url: "static/images/4-EventParticipated/4.1-Event1/event_participants.png", caption: "Ảnh 3: Không gian sự kiện và các bạn thực tập sinh tham gia tại AWS HCM", captionEn: "Photo 3: Event space & attendees at AWS Vietnam HCM" },
         { url: "static/images/4-EventParticipated/4.1-Event1/qa_gift_session.png", caption: "Ảnh 4: Các bạn nhận quà khi tham gia thảo luận Q&A về Triage Bot", captionEn: "Photo 4: Interns receiving gifts during Q&A on Triage Bot" },
-        { url: "static/images/4-EventParticipated/4.1-Event1/triage_bot_architecture.jpg", caption: "Ảnh 5: Cấu trúc kiến trúc toàn cảnh dự án Triage Bot (Market Slack Bot)", captionEn: "Photo 5: Full architectural blueprint of Triage Bot (Market Slack Bot)" }
+        { url: "static/images/4-EventParticipated/4.1-Event1/triage_bot_architecture.jpg", caption: "Ảnh 5: Cấu trúc kiến trúc toàn cảnh dự án Triage Bot (Market Slack Bot)", captionEn: "Photo 5: Full architectural blueprint of Triage Bot (Market Slack Bot)" },
+        { url: "static/images/4-EventParticipated/4.1-Event1/speaker_networking.jpg", caption: "Ảnh 6: Chụp ảnh lưu niệm và giao lưu cùng diễn giả", captionEn: "Photo 6: Commemorative photo & networking with the speaker" }
       ],
       vi: {
         name: "FCAJ Buildrathon Kickoff",
@@ -920,7 +921,7 @@ class AppLanguageManager {
           if (!parsed.blogEntries) parsed.blogEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogEntries));
           if (!parsed.eventEntries) {
             parsed.eventEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries));
-          } else if (parsed.eventEntries[0] && (!parsed.eventEntries[0].vi || !parsed.eventEntries[0].vi.name || !parsed.eventEntries[0].photos || parsed.eventEntries[0].photos.length === 0)) {
+          } else if (parsed.eventEntries[0] && (!parsed.eventEntries[0].vi || !parsed.eventEntries[0].vi.name || !parsed.eventEntries[0].photos || parsed.eventEntries[0].photos.length < 6)) {
             parsed.eventEntries[0] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[0]));
           }
           if (!parsed.workshopChapters) parsed.workshopChapters = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.workshopChapters));

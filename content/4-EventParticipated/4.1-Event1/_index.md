@@ -94,3 +94,10 @@ Engaging Q&A session: Interns asking deep technical questions about Triage Bot r
 Architectural diagram *"THE FULL PICTURE: Each piece answered a question I actually faced"*: Illustrating the end-to-end flow from Slack Socket Mode, Response Gate, Claude Code, Memory context, bot-schedule, Internal APIs, Cron triggers, to DB storage.
 
 ![Triage Bot Full Architecture](images/triage_bot_architecture.jpg)
+
+---
+
+#### 📸 Photo 6: Commemorative Photo & Networking with Speaker
+Memorable networking and commemorative photo session of the interns with the speaker at the AWS Vietnam office following the presentation.
+
+![Networking and photo with speaker](images/speaker_networking.jpg)
