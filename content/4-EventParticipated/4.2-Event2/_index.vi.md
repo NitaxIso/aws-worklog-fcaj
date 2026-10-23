@@ -58,35 +58,40 @@ pre: " <b> 4.2. </b> "
 
 ### 7. Một số hình ảnh khi tham gia sự kiện
 
-#### 📸 Ảnh 1 (4.2.2): Không gian toàn cảnh sự kiện AWS Cloud and AI Day Hanoi
+#### 📸 Ảnh 1 (Vị trí 4.2.1): Ảnh check-in sự kiện (Chờ cập nhật)
+> 📌 *Vị trí 4.2.1 dành riêng cho ảnh check-in tham dự sự kiện của thực tập sinh. Để nguyên vị trí sẵn sàng cập nhật sau.*
+
+---
+
+#### 📸 Ảnh 2 (event_hall_keynote.jpg): Không gian toàn cảnh sự kiện AWS Cloud and AI Day Hanoi
 Toàn cảnh không gian hội trường lớn tại sự kiện AWS Cloud and AI Day Hanoi và phiên khai mạc với sự tham gia của đông đảo cộng đồng công nghệ, doanh nghiệp và các kỹ sư đám mây.
 
-![Không gian sự kiện AWS Cloud and AI Day Hanoi](images/4.2.2.jpg)
+![Không gian sự kiện AWS Cloud and AI Day Hanoi](images/event_hall_keynote.jpg)
 
 ---
 
-#### 📸 Ảnh 2 (4.2.3): Phiên trình bày kỹ thuật về Kiến trúc Cloud & Hệ thống phân tán
+#### 📸 Ảnh 3 (cloud_architecture_dynamo.jpg): Phiên trình bày kỹ thuật về Kiến trúc Cloud & Hệ thống phân tán
 Diễn giả phân tích chuyên sâu về kiến trúc hệ thống quy mô lớn, khả năng chịu lỗi, mô hình dữ liệu NoSQL phân tán và các nguyên lý mở rộng hạ tầng đám mây.
 
-![Phiên chia sẻ kiến trúc Cloud](images/4.2.3.jpg)
+![Phiên chia sẻ kiến trúc Cloud](images/cloud_architecture_dynamo.jpg)
 
 ---
 
-#### 📸 Ảnh 3 (4.2.4): Xu hướng phát triển AI Agent & Ứng dụng AI-Native
+#### 📸 Ảnh 4 (ai_agent_trends.jpg): Xu hướng phát triển AI Agent & Ứng dụng AI-Native
 Phiên thuyết trình về kiến trúc AI Agent trong môi trường doanh nghiệp: Cơ chế reasoning, tích hợp tools và cách phối hợp giữa các Agent tự hành.
 
-![Xu hướng AI Agent và AI-Native](images/4.2.4.jpg)
+![Xu hướng AI Agent và AI-Native](images/ai_agent_trends.jpg)
 
 ---
 
-#### 📸 Ảnh 4 (4.2.5): Tích hợp Bảo mật DevSecOps & Quản trị rủi ro Cloud
+#### 📸 Ảnh 5 (devsecops_cloud_security.jpg): Tích hợp Bảo mật DevSecOps & Quản trị rủi ro Cloud
 Phiên chia sẻ về chiến lược bảo mật Shift-left, quản trị danh tính IAM, tự động hóa kiểm tra an toàn thông tin và giám sát đe dọa thời gian thực trên AWS.
 
-![Bảo mật DevSecOps trên Cloud](images/4.2.5.jpg)
+![Bảo mật DevSecOps trên Cloud](images/devsecops_cloud_security.jpg)
 
 ---
 
-#### 📸 Ảnh 5 (4.2.6): Trải nghiệm khu vực Demo công nghệ & Trao đổi kỹ thuật
+#### 📸 Ảnh 6 (technology_demo_booths.jpg): Trải nghiệm khu vực Demo công nghệ & Trao đổi kỹ thuật
 Khu vực gian hàng demo các giải pháp đám mây, các sản phẩm ứng dụng Generative AI và không gian thảo luận trực tiếp cùng các chuyên gia giải pháp AWS.
 
-![Khu vực Demo và giao lưu kỹ thuật](images/4.2.6.jpg)
+![Khu vực Demo và giao lưu kỹ thuật](images/technology_demo_booths.jpg)

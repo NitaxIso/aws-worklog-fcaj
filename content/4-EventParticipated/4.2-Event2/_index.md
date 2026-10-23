@@ -56,35 +56,40 @@ pre: " <b> 4.2. </b> "
 
 ### 7. Event Participation Photos
 
-#### 📸 Photo 1 (4.2.2): Panoramic View of AWS Cloud and AI Day Hanoi
+#### 📸 Photo 1 (Slot 4.2.1): Event Check-in Photo (Pending Update)
+> 📌 *Slot 4.2.1 reserved for intern event check-in photo. Kept intact for future update.*
+
+---
+
+#### 📸 Photo 2 (event_hall_keynote.jpg): Panoramic View of AWS Cloud and AI Day Hanoi
 Grand keynote hall during the opening session of AWS Cloud and AI Day Hanoi with industry practitioners, enterprise leaders, and cloud architects.
 
-![AWS Cloud and AI Day Hanoi Opening](images/4.2.2.jpg)
+![AWS Cloud and AI Day Hanoi Opening](images/event_hall_keynote.jpg)
 
 ---
 
-#### 📸 Photo 2 (4.2.3): Technical Session on Cloud Architecture & Distributed Systems
+#### 📸 Photo 3 (cloud_architecture_dynamo.jpg): Technical Session on Cloud Architecture & Distributed Systems
 Deep-dive presentation on large-scale distributed architectures, fault-tolerant key-value stores, and cloud elasticity.
 
-![Cloud Architecture Session](images/4.2.3.jpg)
+![Cloud Architecture Session](images/cloud_architecture_dynamo.jpg)
 
 ---
 
-#### 📸 Photo 3 (4.2.4): AI Agent Evolution & AI-Native Architectures
+#### 📸 Photo 4 (ai_agent_trends.jpg): AI Agent Evolution & AI-Native Architectures
 Technical session detailing autonomous AI Agent reasoning, tool-use mechanisms, and multi-agent enterprise integration.
 
-![AI Agent Trends](images/4.2.4.jpg)
+![AI Agent Trends](images/ai_agent_trends.jpg)
 
 ---
 
-#### 📸 Photo 4 (4.2.5): Cloud DevSecOps & Security Governance
+#### 📸 Photo 5 (devsecops_cloud_security.jpg): Cloud DevSecOps & Security Governance
 Best practices for shift-left security automation, IAM governance, and runtime security monitoring on AWS.
 
-![Cloud DevSecOps Session](images/4.2.5.jpg)
+![Cloud DevSecOps Session](images/devsecops_cloud_security.jpg)
 
 ---
 
-#### 📸 Photo 5 (4.2.6): Technology Demo Booths & Solution Architect Networking
+#### 📸 Photo 6 (technology_demo_booths.jpg): Technology Demo Booths & Solution Architect Networking
 Exploring hands-on AWS solution demos, Generative AI showcases, and technical discussions at the Ask-an-Architect area.
 
-![Technology Demo Booths](images/4.2.6.jpg)
+![Technology Demo Booths](images/technology_demo_booths.jpg)
