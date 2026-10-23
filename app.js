@@ -801,6 +801,7 @@ const DEFAULT_BILINGUAL_DATA = {
     {
       num: 2,
       photos: [
+        { url: "static/images/4-EventParticipated/4.2-Event2/event_checkin_badge.jpg", caption: "Ảnh 1: Thẻ đeo tham dự sự kiện (Attendee Check-in Badge)", captionEn: "Photo 1: Attendee Check-in Badge at AWS Cloud and AI Day Hanoi" },
         { url: "static/images/4-EventParticipated/4.2-Event2/event_hall_keynote.jpg", caption: "Ảnh 2: Toàn cảnh không gian sự kiện AWS Cloud and AI Day Hanoi", captionEn: "Photo 2: Panoramic view of AWS Cloud and AI Day Hanoi" },
         { url: "static/images/4-EventParticipated/4.2-Event2/cloud_architecture_dynamo.jpg", caption: "Ảnh 3: Phiên trình bày kỹ thuật về Kiến trúc Cloud & Hệ thống phân tán", captionEn: "Photo 3: Technical session on Cloud Architecture & Distributed Systems" },
         { url: "static/images/4-EventParticipated/4.2-Event2/ai_agent_trends.jpg", caption: "Ảnh 4: Xu hướng phát triển AI Agent & Ứng dụng AI-Native", captionEn: "Photo 4: AI Agent evolution & AI-native architectures" },
@@ -951,7 +952,7 @@ class AppLanguageManager {
             if (parsed.eventEntries[0] && (!parsed.eventEntries[0].vi || !parsed.eventEntries[0].vi.name || !parsed.eventEntries[0].photos || parsed.eventEntries[0].photos.length < 6)) {
               parsed.eventEntries[0] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[0]));
             }
-            if (parsed.eventEntries[1] && (!parsed.eventEntries[1].vi || !parsed.eventEntries[1].vi.name || !parsed.eventEntries[1].photos || parsed.eventEntries[1].photos.length < 5 || (parsed.eventEntries[1].photos[0] && typeof parsed.eventEntries[1].photos[0] === 'object' && parsed.eventEntries[1].photos[0].url && parsed.eventEntries[1].photos[0].url.includes("4.2.2.jpg")))) {
+            if (parsed.eventEntries[1] && (!parsed.eventEntries[1].vi || !parsed.eventEntries[1].vi.name || !parsed.eventEntries[1].photos || parsed.eventEntries[1].photos.length < 6 || (parsed.eventEntries[1].photos[0] && typeof parsed.eventEntries[1].photos[0] === 'object' && parsed.eventEntries[1].photos[0].url && !parsed.eventEntries[1].photos[0].url.includes("event_checkin_badge.jpg")))) {
               parsed.eventEntries[1] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[1]));
             }
           }

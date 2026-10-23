@@ -58,8 +58,10 @@ pre: " <b> 4.2. </b> "
 
 ### 7. Một số hình ảnh khi tham gia sự kiện
 
-#### 📸 Ảnh 1 (Vị trí 4.2.1): Ảnh check-in sự kiện (Chờ cập nhật)
-> 📌 *Vị trí 4.2.1 dành riêng cho ảnh check-in tham dự sự kiện của thực tập sinh. Để nguyên vị trí sẵn sàng cập nhật sau.*
+#### 📸 Ảnh 1 (event_checkin_badge.jpg): Thẻ đeo tham dự sự kiện (Attendee Check-in Badge)
+Minh chứng check-in chính thức tại sự kiện AWS Cloud and AI Day Hanoi: Thẻ đeo mang tên thực tập sinh Lê Công Luyến (FPT University - Attendee) cùng dây đeo nhận diện chính hãng từ ban tổ chức AWS trên nền máy tính cá nhân.
+
+![Thẻ đeo tham dự sự kiện AWS Cloud and AI Day Hanoi](images/event_checkin_badge.jpg)
 
 ---
 

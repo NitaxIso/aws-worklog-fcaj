@@ -56,8 +56,10 @@ pre: " <b> 4.2. </b> "
 
 ### 7. Event Participation Photos
 
-#### 📸 Photo 1 (Slot 4.2.1): Event Check-in Photo (Pending Update)
-> 📌 *Slot 4.2.1 reserved for intern event check-in photo. Kept intact for future update.*
+#### 📸 Photo 1 (event_checkin_badge.jpg): Attendee Check-in Badge
+Official attendance verification badge at AWS Cloud and AI Day Hanoi: Attendee badge issued to intern Le Cong Luyen (FPT University - Attendee) with official AWS event lanyard on personal computer setup.
+
+![AWS Cloud and AI Day Hanoi Attendee Check-in Badge](images/event_checkin_badge.jpg)
 
 ---
 
