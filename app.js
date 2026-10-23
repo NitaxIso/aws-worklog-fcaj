@@ -800,9 +800,35 @@ const DEFAULT_BILINGUAL_DATA = {
     },
     {
       num: 2,
-      photos: [],
-      vi: { name: "", time: "", location: "", role: "", purpose: "", speakers: "", highlights: "", learnings: "", experience: "" },
-      en: { name: "", time: "", location: "", role: "", purpose: "", speakers: "", highlights: "", learnings: "", experience: "" }
+      photos: [
+        { url: "static/images/4-EventParticipated/4.2-Event2/4.2.2.jpg", caption: "Ảnh 1 (4.2.2): Không gian toàn cảnh sự kiện AWS Cloud and AI Day Hanoi", captionEn: "Photo 1 (4.2.2): Panoramic view of AWS Cloud and AI Day Hanoi" },
+        { url: "static/images/4-EventParticipated/4.2-Event2/4.2.3.jpg", caption: "Ảnh 2 (4.2.3): Phiên trình bày kỹ thuật về Kiến trúc Cloud & Hệ thống phân tán", captionEn: "Photo 2 (4.2.3): Technical session on Cloud Architecture & Distributed Systems" },
+        { url: "static/images/4-EventParticipated/4.2-Event2/4.2.4.jpg", caption: "Ảnh 3 (4.2.4): Xu hướng phát triển AI Agent & Ứng dụng AI-Native", captionEn: "Photo 3 (4.2.4): AI Agent evolution & AI-native architectures" },
+        { url: "static/images/4-EventParticipated/4.2-Event2/4.2.5.jpg", caption: "Ảnh 4 (4.2.5): Tích hợp Bảo mật DevSecOps & Quản trị rủi ro Cloud", captionEn: "Photo 4 (4.2.5): Cloud DevSecOps & security governance" },
+        { url: "static/images/4-EventParticipated/4.2-Event2/4.2.6.jpg", caption: "Ảnh 5 (4.2.6): Trải nghiệm khu vực Demo công nghệ & Trao đổi kỹ thuật", captionEn: "Photo 5 (4.2.6): Technology demo booths & Solution Architect networking" }
+      ],
+      vi: {
+        name: "AWS Cloud and AI Day Hanoi",
+        time: "Thứ Ba, 29/09/2026",
+        location: "Trung tâm Hội nghị Quốc gia / Khách sạn đối tác AWS, Hà Nội, Việt Nam",
+        role: "Thực tập sinh tham dự (Workforce Bootcamp Intern - Attendee)",
+        purpose: "Tiếp cận bức tranh toàn cảnh về xu hướng hiện đại hóa hạ tầng điện toán đám mây và làn sóng ứng dụng Trí tuệ nhân tạo thế hệ mới (Generative AI & AI Agent), kiến trúc hệ thống phân tán quy mô lớn và thực hành tốt nhất về bảo mật DevSecOps.",
+        speakers: "- AWS Principal Solutions Architects & Technical Evangelists\n- Lãnh đạo Công nghệ & Chuyên gia Kỹ thuật đối tác AWS\n- Security & Compliance Specialists",
+        highlights: "1. Kiến trúc Cloud và khả năng mở rộng hệ thống: Phân tích bài toán thiết kế hệ thống phân tán chịu tải hàng triệu request/giây, nguyên lý Amazon Dynamo Paper và dịch vụ NoSQL Amazon DynamoDB.\n2. AI Agent và xu hướng ứng dụng AI-Native: Chuyển dịch từ prompting sang autonomous agent có khả năng reasoning, tool use, memory và cơ chế human-in-the-loop.\n3. Phát triển phần mềm với sự hỗ trợ của AI: Tích hợp trợ lý lập trình thông minh (Amazon Q Developer, Claude Code) vào IDE, duy trì chuẩn mực kiến trúc và kiểm soát bảo mật mã nguồn.\n4. Bảo mật và vận hành hệ thống Cloud: Shift-left DevSecOps, quét lỗ hổng tự động trong pipeline CI/CD, phân quyền IAM Least Privilege, KMS encryption và giám sát đe dọa qua Security Hub & GuardDuty.\n5. Hệ sinh thái dịch vụ AWS cho GenAI: Amazon Bedrock, SageMaker JumpStart, và phần cứng chuyên dụng AWS Trainium/Inferentia.",
+        learnings: "1. Nắm vững tư duy thiết kế hệ thống phân tán và sự đánh đổi trong định lý CAP/PACELC giữa tính nhất quán và tính sẵn sàng.\n2. Nhận thức sâu sắc về An toàn thông tin trong kỷ nguyên GenAI: Xây dựng rào chắn guardrails, phân loại dữ liệu và phòng chống tấn công Prompt Injection/Data Leakage.\n3. Nền tảng khoa học máy tính cốt lõi (Cấu trúc dữ liệu, giải thuật, OS, mạng, mật mã học) luôn là chìa khóa để làm chủ công nghệ và điều phối AI hiệu quả.",
+        experience: "Sự kiện quy tụ đông đảo các chuyên gia đầu ngành tại Hà Nội, mang lại không khí trao đổi học thuật sôi nổi. Trải nghiệm trực tiếp các gian hàng demo công nghệ tương tác và trao đổi chuyên môn tại quầy Ask-an-Architect đã giúp mở rộng tầm nhìn thực tế."
+      },
+      en: {
+        name: "AWS Cloud and AI Day Hanoi",
+        time: "Tuesday, 29/09/2026",
+        location: "National Convention Center / AWS Partner Venue, Hanoi, Vietnam",
+        role: "Workforce Bootcamp Intern (Attendee)",
+        purpose: "Explore comprehensive cloud modernization strategies, scalable distributed systems architecture, enterprise Generative AI and autonomous AI Agents, and cloud-native DevSecOps security practices.",
+        speakers: "- AWS Principal Solutions Architects & Technical Evangelists\n- CTOs & Technology Leaders from AWS Premier Partners\n- Security & Compliance Specialists",
+        highlights: "1. Cloud Architecture & Scalability: Large-scale distributed systems, Amazon Dynamo Paper principles, and managed NoSQL via Amazon DynamoDB.\n2. AI Agents & AI-Native Applications: Multi-step reasoning, external tool execution, stateful memory, and human-in-the-loop governance.\n3. AI-Assisted Software Engineering: Accelerating feedback loops with Amazon Q Developer and Claude Code while maintaining code quality and security discipline.\n4. Cloud Security & DevSecOps: Shift-left automated scanning in CI/CD, least-privilege IAM, KMS encryption, and Amazon GuardDuty threat monitoring.\n5. AWS GenAI Enterprise Ecosystem: Foundation Models on Amazon Bedrock, SageMaker JumpStart, and AWS custom silicon (Trainium/Inferentia).",
+        learnings: "1. Mastered distributed systems trade-offs governed by CAP/PACELC theorems.\n2. Enhanced information assurance mindset: Enforcing guardrails, data classification, and mitigation of prompt injection vectors.\n3. Core computer science fundamentals remain the ultimate foundation for engineering excellence.",
+        experience: "Connecting with cloud leaders and solution architects at the Ask-an-Architect booth provided invaluable technical insights into modern production workloads."
+      }
     },
     {
       num: 3,
@@ -921,8 +947,13 @@ class AppLanguageManager {
           if (!parsed.blogEntries) parsed.blogEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.blogEntries));
           if (!parsed.eventEntries) {
             parsed.eventEntries = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries));
-          } else if (parsed.eventEntries[0] && (!parsed.eventEntries[0].vi || !parsed.eventEntries[0].vi.name || !parsed.eventEntries[0].photos || parsed.eventEntries[0].photos.length < 6)) {
-            parsed.eventEntries[0] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[0]));
+          } else {
+            if (parsed.eventEntries[0] && (!parsed.eventEntries[0].vi || !parsed.eventEntries[0].vi.name || !parsed.eventEntries[0].photos || parsed.eventEntries[0].photos.length < 6)) {
+              parsed.eventEntries[0] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[0]));
+            }
+            if (parsed.eventEntries[1] && (!parsed.eventEntries[1].vi || !parsed.eventEntries[1].vi.name || !parsed.eventEntries[1].photos || parsed.eventEntries[1].photos.length < 5)) {
+              parsed.eventEntries[1] = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.eventEntries[1]));
+            }
           }
           if (!parsed.workshopChapters) parsed.workshopChapters = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.workshopChapters));
           if (!parsed.selfEvaluation) parsed.selfEvaluation = JSON.parse(JSON.stringify(DEFAULT_BILINGUAL_DATA.selfEvaluation));
