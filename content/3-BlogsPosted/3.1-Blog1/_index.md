@@ -1,14 +1,19 @@
 ---
-title: "Blog 1"
-date: 2026-09-14
+title: "AMAZON GUARDDUTY – AWS PHÁT HIỆN MỐI ĐE DỌA BẢO MẬT TỰ ĐỘNG NHƯ THẾ NÀO?"
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-> 📌 **Status for 3.1 (Blog 1):** Currently left empty as Blog 1 has not been published yet.
+# AMAZON GUARDDUTY – AWS PHÁT HIỆN MỐI ĐE DỌA BẢO MẬT TỰ ĐỘNG NHƯ THẾ NÀO?
 
-### Planned Content for 3.1:
-* **Article Title:** *(Planned to update the AWS technical/translated blog title)*
-* **Published Date & URL:** *(Planned to link the published post on https://awsstudygroup.com/)*
-* **Executive Summary & Content:** *(Planned to summarize key AWS concepts and steps covered in the article)*
+Summary: Amazon GuardDuty analyzes logs to detect threats, generates findings, and supports automated response through Amazon EventBridge and AWS Lambda.
+
+[Open source document (OneDrive)](https://1drv.ms/w/c/b0f7e1f2c77d799c/IQDGLYCjpXbcQoKPxQ3l6y2XAQkqsuCEFT_eDAjJ7WGbbn8?e=cKqslP)
+
+> User-provided source document; publication date and AWS Study Group publication link have not been confirmed.
+
+### Architecture diagram
+
+![Architecture diagram](images/guardduty-architecture.png)

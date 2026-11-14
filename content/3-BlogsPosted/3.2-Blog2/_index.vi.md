@@ -1,14 +1,19 @@
 ---
-title: "Blog 2"
-date: 2026-09-14
+title: "AWS CLOUDTRAIL – AWS GHI LẠI MỌI HÀNH ĐỘNG TRONG TÀI KHOẢN NHƯ THẾ NÀO?"
+date: ""
 weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-> 📌 **Trạng thái mục 3.2 (Blog 2):** Hiện đang để trống vì bài Blog 2 chưa được đăng tải.
+# AWS CLOUDTRAIL – AWS GHI LẠI MỌI HÀNH ĐỘNG TRONG TÀI KHOẢN NHƯ THẾ NÀO?
 
-### Dự định thực hiện tại mục 3.2:
-* **Tiêu đề bài viết:** *(Dự định cập nhật tiêu đề bài viết kỹ thuật hoặc bài dịch AWS)*
-* **Ngày xuất bản & Đường dẫn (URL):** *(Dự định đính kèm link bài viết trên https://awsstudygroup.com/)*
-* **Tóm tắt nội dung:** *(Dự định trình bày tóm tắt kiến thức dịch vụ AWS, sơ đồ và các bước thực hiện chính trong bài blog)*
+Tóm tắt: AWS CloudTrail ghi nhận hoạt động API để kiểm toán, gồm management events và data events; trails lưu vào Amazon S3 và CloudTrail Lake hỗ trợ truy vấn phục vụ tuân thủ.
+
+[Mở tài liệu nguồn (OneDrive)](https://1drv.ms/w/c/b0f7e1f2c77d799c/IQANtZk0Ub8DSYDaoiFIAGCDAZJjVecLEt7lWJ3r-zDSJZ4?e=ld5YUt)
+
+> Tài liệu nguồn do người dùng cung cấp; chưa xác nhận ngày xuất bản hoặc liên kết đăng trên AWS Study Group.
+
+### Sơ đồ kiến trúc
+
+![Sơ đồ kiến trúc](images/cloudtrail-architecture.png)

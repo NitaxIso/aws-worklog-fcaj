@@ -756,12 +756,60 @@ const DEFAULT_BILINGUAL_DATA = {
     }
   },
 
-  // SECTION 3: BLOGS POSTED (3.1, 3.2, 3.3 - Empty by default)
-  blogEntries: [1, 2, 3].map(num => ({
-    num,
-    vi: { title: "", date: "", url: "", summary: "", content: "" },
-    en: { title: "", date: "", url: "", summary: "", content: "" }
-  })),
+  // SECTION 3: BLOGS POSTED (user-provided source documents; publication dates unconfirmed)
+  blogEntries: [
+    {
+      "num": 1,
+      "vi": {
+        "title": "AMAZON GUARDDUTY – AWS PHÁT HIỆN MỐI ĐE DỌA BẢO MẬT TỰ ĐỘNG NHƯ THẾ NÀO?",
+        "date": "",
+        "url": "https://1drv.ms/w/c/b0f7e1f2c77d799c/IQDGLYCjpXbcQoKPxQ3l6y2XAQkqsuCEFT_eDAjJ7WGbbn8?e=cKqslP",
+        "summary": "Tóm tắt: Amazon GuardDuty phân tích log để phát hiện mối đe dọa, tạo findings và hỗ trợ phản ứng tự động thông qua Amazon EventBridge và AWS Lambda.",
+        "content": ""
+      },
+      "en": {
+        "title": "AMAZON GUARDDUTY – AWS PHÁT HIỆN MỐI ĐE DỌA BẢO MẬT TỰ ĐỘNG NHƯ THẾ NÀO?",
+        "date": "",
+        "url": "https://1drv.ms/w/c/b0f7e1f2c77d799c/IQDGLYCjpXbcQoKPxQ3l6y2XAQkqsuCEFT_eDAjJ7WGbbn8?e=cKqslP",
+        "summary": "Summary: Amazon GuardDuty analyzes logs to detect threats, generates findings, and supports automated response through Amazon EventBridge and AWS Lambda.",
+        "content": ""
+      }
+    },
+    {
+      "num": 2,
+      "vi": {
+        "title": "AWS CLOUDTRAIL – AWS GHI LẠI MỌI HÀNH ĐỘNG TRONG TÀI KHOẢN NHƯ THẾ NÀO?",
+        "date": "",
+        "url": "https://1drv.ms/w/c/b0f7e1f2c77d799c/IQANtZk0Ub8DSYDaoiFIAGCDAZJjVecLEt7lWJ3r-zDSJZ4?e=ld5YUt",
+        "summary": "Tóm tắt: AWS CloudTrail ghi nhận hoạt động API để kiểm toán, gồm management events và data events; trails lưu vào Amazon S3 và CloudTrail Lake hỗ trợ truy vấn phục vụ tuân thủ.",
+        "content": ""
+      },
+      "en": {
+        "title": "AWS CLOUDTRAIL – AWS GHI LẠI MỌI HÀNH ĐỘNG TRONG TÀI KHOẢN NHƯ THẾ NÀO?",
+        "date": "",
+        "url": "https://1drv.ms/w/c/b0f7e1f2c77d799c/IQANtZk0Ub8DSYDaoiFIAGCDAZJjVecLEt7lWJ3r-zDSJZ4?e=ld5YUt",
+        "summary": "Summary: AWS CloudTrail records API activity for auditing, including management and data events; trails store records in Amazon S3 and CloudTrail Lake supports compliance queries.",
+        "content": ""
+      }
+    },
+    {
+      "num": 3,
+      "vi": {
+        "title": "1AWS END USER MESSAGING NOTIFY – GỬI OTP TRONG VÀI PHÚT, KHÔNG CẦN ĐĂNG KÝ SỐ GỬI RIÊNG",
+        "date": "",
+        "url": "https://1drv.ms/w/c/b0f7e1f2c77d799c/IQAPyphz-uwZRar_iN0SDkmLAbw84B65MQLlPHdUTEXavBA?e=Xk3pza",
+        "summary": "Tóm tắt: AWS End User Messaging Notify hỗ trợ OTP qua SMS/Voice với danh tính gửi được quản lý tại các thị trường hỗ trợ; bài viết đề cập SMS Protect, giới hạn tốc độ, thời hạn OTP và yêu cầu tuân thủ.",
+        "content": ""
+      },
+      "en": {
+        "title": "1AWS END USER MESSAGING NOTIFY – GỬI OTP TRONG VÀI PHÚT, KHÔNG CẦN ĐĂNG KÝ SỐ GỬI RIÊNG",
+        "date": "",
+        "url": "https://1drv.ms/w/c/b0f7e1f2c77d799c/IQAPyphz-uwZRar_iN0SDkmLAbw84B65MQLlPHdUTEXavBA?e=Xk3pza",
+        "summary": "Summary: AWS End User Messaging Notify supports OTP over SMS/Voice with managed sender identities in supported markets; the article covers SMS Protect, rate limits, OTP expiry, and compliance requirements.",
+        "content": ""
+      }
+    }
+  ],
 
   // SECTION 4: EVENTS PARTICIPATED (4.1 Event 1 Populated; 4.2 & 4.3 Planned)
   eventEntries: [
