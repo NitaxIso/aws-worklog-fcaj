@@ -1,4 +1,8 @@
 ---
+report_key: "workshopChapters"
+report_language: "en"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 1
 title: "Prerequisites"
 date: 2026-09-14
 weight: 2

@@ -1,4 +1,8 @@
 ---
+report_key: "proposal"
+report_language: "vi"
+report_fields: {"title":"","subtitle":"","summary":"","problem":"","solution":"","roi":"","arch":"","services":"","tech":"","timeline":"","calcUrl":"","budget":"","risks":"","outcomes":""}
+report_shared: {"archImgDataUrl":""}
 title: "Bản đề xuất"
 date: 2026-09-14
 weight: 2

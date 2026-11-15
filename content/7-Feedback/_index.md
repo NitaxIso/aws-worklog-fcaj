@@ -1,4 +1,7 @@
 ---
+report_key: "feedback"
+report_language: "en"
+report_fields: {"env":"The working environment at AWS is exceptionally welcoming, open, and professional. Team members are always willing to assist whenever technical difficulties arise. The workplace is modern and fosters deep focus and creativity.","mentor":"The mentor provides thorough, problem-solving guidance rather than simply handing out answers. The admin team provides timely support for Sandbox cloud accounts and operational procedures.","relevance":"Assigned tasks align closely with the Information Assurance curriculum at FPT University, while broadening exposure to enterprise-grade cloud security technologies.","learning":"Gained hands-on experience with cutting-edge cloud technologies (VPC, EC2, IAM, Serverless, Amazon Q Developer) and cultivated professional international corporate discipline.","culture":"Amazon's leadership principles such as Customer Obsession and Ownership are vividly demonstrated across teams. The collaborative culture made me feel like an integral team member.","policies":"Internship policies are transparent, with flexible scheduling and generous cloud practice resources provided throughout the bootcamp.","q1":"","q2":"","q3":"","suggestions":"I hope future FCAJ cohorts can include more in-person hackathons and networking alumni roundtables with cloud engineers working at major AWS partners.","continueProg":"","other":""}
 title: "Sharing and Feedback"
 date: 2026-09-14
 weight: 7

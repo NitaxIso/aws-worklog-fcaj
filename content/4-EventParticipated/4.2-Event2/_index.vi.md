@@ -1,4 +1,9 @@
 ---
+report_key: "eventEntries"
+report_language: "vi"
+report_fields: {"name":"AWS Cloud and AI Day Hanoi","time":"Thứ Ba, 29/09/2026","location":"Văn phòng AWS Việt Nam, Tầng 26, Tháp Bitexco Financial Tower, Số 2 Hải Triều, Bến Nghé, Quận 1, TP.HCM","role":"Thực tập sinh tham dự (Workforce Bootcamp Intern - Attendee)","purpose":"Tiếp cận bức tranh toàn cảnh về xu hướng hiện đại hóa hạ tầng điện toán đám mây và làn sóng ứng dụng Trí tuệ nhân tạo thế hệ mới (Generative AI & AI Agent), kiến trúc hệ thống phân tán quy mô lớn và thực hành tốt nhất về bảo mật DevSecOps.","speakers":"- AWS Principal Solutions Architects & Technical Evangelists\n- Lãnh đạo Công nghệ & Chuyên gia Kỹ thuật đối tác AWS\n- Security & Compliance Specialists","highlights":"1. Kiến trúc Cloud và khả năng mở rộng hệ thống: Phân tích bài toán thiết kế hệ thống phân tán chịu tải hàng triệu request/giây, nguyên lý Amazon Dynamo Paper và dịch vụ NoSQL Amazon DynamoDB.\n2. AI Agent và xu hướng ứng dụng AI-Native: Chuyển dịch từ prompting sang autonomous agent có khả năng reasoning, tool use, memory và cơ chế human-in-the-loop.\n3. Phát triển phần mềm với sự hỗ trợ của AI: Tích hợp trợ lý lập trình thông minh (Amazon Q Developer, Claude Code) vào IDE, duy trì chuẩn mực kiến trúc và kiểm soát bảo mật mã nguồn.\n4. Bảo mật và vận hành hệ thống Cloud: Shift-left DevSecOps, quét lỗ hổng tự động trong pipeline CI/CD, phân quyền IAM Least Privilege, KMS encryption và giám sát đe dọa qua Security Hub & GuardDuty.\n5. Hệ sinh thái dịch vụ AWS cho GenAI: Amazon Bedrock, SageMaker JumpStart, và phần cứng chuyên dụng AWS Trainium/Inferentia.","learnings":"1. Nắm vững tư duy thiết kế hệ thống phân tán và sự đánh đổi trong định lý CAP/PACELC giữa tính nhất quán và tính sẵn sàng.\n2. Nhận thức sâu sắc về An toàn thông tin trong kỷ nguyên GenAI: Xây dựng rào chắn guardrails, phân loại dữ liệu và phòng chống tấn công Prompt Injection/Data Leakage.\n3. Nền tảng khoa học máy tính cốt lõi (Cấu trúc dữ liệu, giải thuật, OS, mạng, mật mã học) luôn là chìa khóa để làm chủ công nghệ và điều phối AI hiệu quả.","experience":"Sự kiện quy tụ đông đảo các chuyên gia đầu ngành tại TP. Hồ Chí Minh, mang lại không khí trao đổi học thuật sôi nổi. Trải nghiệm trực tiếp các gian hàng demo công nghệ tương tác và trao đổi chuyên môn tại quầy Ask-an-Architect đã giúp mở rộng tầm nhìn thực tế."}
+report_index: 1
+report_shared: {"num":2,"photos":[{"url":"static/images/4-EventParticipated/4.2-Event2/event_checkin_badge.jpg","caption":"Ảnh 1: Thẻ đeo tham dự sự kiện (Attendee Check-in Badge)","captionEn":"Photo 1: Attendee Check-in Badge at AWS Cloud and AI Day Hanoi"},{"url":"static/images/4-EventParticipated/4.2-Event2/event_hall_keynote.jpg","caption":"Ảnh 2: Toàn cảnh không gian sự kiện AWS Cloud and AI Day Hanoi","captionEn":"Photo 2: Panoramic view of AWS Cloud and AI Day Hanoi"},{"url":"static/images/4-EventParticipated/4.2-Event2/cloud_architecture_dynamo.jpg","caption":"Ảnh 3: Phiên trình bày kỹ thuật về Kiến trúc Cloud & Hệ thống phân tán","captionEn":"Photo 3: Technical session on Cloud Architecture & Distributed Systems"},{"url":"static/images/4-EventParticipated/4.2-Event2/ai_agent_trends.jpg","caption":"Ảnh 4: Xu hướng phát triển AI Agent & Ứng dụng AI-Native","captionEn":"Photo 4: AI Agent evolution & AI-native architectures"},{"url":"static/images/4-EventParticipated/4.2-Event2/devsecops_cloud_security.jpg","caption":"Ảnh 5: Tích hợp Bảo mật DevSecOps & Quản trị rủi ro Cloud","captionEn":"Photo 5: Cloud DevSecOps & security governance"},{"url":"static/images/4-EventParticipated/4.2-Event2/technology_demo_booths.jpg","caption":"Ảnh 6: Trải nghiệm khu vực Demo công nghệ & Trao đổi kỹ thuật","captionEn":"Photo 6: Technology demo booths & Solution Architect networking"}]}
 title: "Event 2: AWS Cloud and AI Day Hanoi"
 date: 2026-09-29
 weight: 2
@@ -9,7 +14,7 @@ pre: " <b> 4.2. </b> "
 ### 1. Thông tin sự kiện
 * **Tên sự kiện:** AWS Cloud and AI Day Hanoi
 * **Thời gian:** Thứ Ba, 29/09/2026
-* **Địa điểm:** Trung tâm Hội nghị Quốc gia / Khách sạn đối tác AWS, Hà Nội, Việt Nam
+* **Địa điểm:** Văn phòng AWS Việt Nam, Tầng 26, Tháp Bitexco Financial Tower, Số 2 Hải Triều, Bến Nghé, Quận 1, TP.HCM
 * **Vai trò trong sự kiện:** Thực tập sinh tham dự (Workforce Bootcamp Intern - Attendee)
 
 ### 2. Mục đích của sự kiện
@@ -51,7 +56,7 @@ pre: " <b> 4.2. </b> "
    * Thiết kế kiến trúc bài Lab và đồ án thực tập tuân thủ chặt chẽ 6 trụ cột của **AWS Well-Architected Framework** (đặc biệt là 2 trụ cột Security và Reliability).
    * Áp dụng tư duy phân tách thành phần (Decoupling) và kiểm soát truy cập nghiêm ngặt khi tích hợp các dịch vụ Cloud & AI.
 * **Trải nghiệm và kết nối (Networking):**
-   * Sự kiện quy tụ đông đảo các chuyên gia đầu ngành tại Hà Nội, mang lại không khí trao đổi học thuật sôi nổi và cơ hội mở rộng mối quan hệ chuyên môn.
+   * Sự kiện quy tụ đông đảo các chuyên gia đầu ngành tại TP. Hồ Chí Minh, mang lại không khí trao đổi học thuật sôi nổi và cơ hội mở rộng mối quan hệ chuyên môn.
    * Được trực tiếp trải nghiệm các gian hàng demo công nghệ tương tác, trao đổi kỹ thuật với các AWS Solution Architects tại quầy Ask-an-Architect.
 
 ---

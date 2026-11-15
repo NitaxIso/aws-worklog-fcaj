@@ -1,4 +1,9 @@
 ---
+report_key: "workshopChapters"
+report_language: "vi"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 1
+report_shared: {"code":"5.2"}
 title: "Các bước chuẩn bị"
 date: 2026-09-14
 weight: 2

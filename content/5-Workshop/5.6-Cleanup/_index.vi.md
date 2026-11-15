@@ -1,4 +1,9 @@
 ---
+report_key: "workshopChapters"
+report_language: "vi"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 5
+report_shared: {"code":"5.6"}
 title: "Dọn dẹp tài nguyên"
 date: 2026-09-14
 weight: 6

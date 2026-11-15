@@ -1,4 +1,8 @@
 ---
+report_key: "selfEvaluation"
+report_language: "vi"
+report_fields: {"narrative":"","improvement":""}
+report_shared: {"ratings":{}}
 title: "Tự đánh giá"
 date: 2026-09-14
 weight: 6

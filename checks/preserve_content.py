@@ -1,4 +1,4 @@
-﻿"""Run: python checks/preserve_content.py. UI redesign must not rewrite report sources."""
+﻿"""Run: python checks/preserve_content.py. Protect the post-migration report baseline; migration parity is checked separately."""
 import hashlib
 import json
 from pathlib import Path

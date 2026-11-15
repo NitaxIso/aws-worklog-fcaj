@@ -1,4 +1,8 @@
 ---
+report_key: "feedback"
+report_language: "vi"
+report_fields: {"env":"Môi trường làm việc tại AWS vô cùng thân thiện, cởi mở và chuyên nghiệp. Mọi thành viên luôn sẵn sàng giải đáp và hỗ trợ bất kể khi nào gặp vướng mắc kỹ thuật. Không gian làm việc hiện đại, tạo cảm hứng sáng tạo rất cao.","mentor":"Mentor hướng dẫn rất tận tâm, định hướng tư duy giải quyết vấn đề thay vì đưa sẵn đáp án. Đội ngũ admin hỗ trợ tài liệu, tài khoản Sandbox và thủ tục hành chính rất nhanh chóng và chu đáo.","relevance":"Nội dung thực tập bám sát và phát triển sâu hơn các môn học Mạng máy tính, An toàn thông tin và Điện toán đám mây tại Trường Đại học FPT.","learning":"Được thực chiến với các dịch vụ Cloud hàng đầu thế giới (VPC, EC2, IAM, Serverless, AI Q Developer), nâng cao tác phong làm việc chuẩn doanh nghiệp toàn cầu.","culture":"Văn hóa Customer Obsession và Ownership thể hiện rất rõ nét. Tinh thần hỗ trợ lẫn nhau không phân biệt cấp bậc giúp thực tập sinh nhanh chóng hòa nhập.","policies":"Chính sách hỗ trợ thực tập rõ ràng, thời gian làm việc linh hoạt, được cấp đầy đủ tài nguyên thực hành cloud trong suốt khóa học.","q1":"","q2":"","q3":"","suggestions":"Kỳ vọng chương trình FCAJ sẽ tổ chức thêm nhiều buổi Offline Hackathon và kết nối giao lưu với các cựu học viên đang làm việc tại các đối tác AWS lớn.","continueProg":"","other":""}
+report_shared: {}
 title: "Chia sẻ, đóng góp ý kiến"
 date: 2026-09-14
 weight: 7

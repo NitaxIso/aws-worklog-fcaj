@@ -1,4 +1,7 @@
 ---
+report_key: "selfEvaluation"
+report_language: "en"
+report_fields: {"narrative":"","improvement":""}
 title: "Self-Assessment"
 date: 2026-09-14
 weight: 6

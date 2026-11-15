@@ -1,4 +1,7 @@
 ---
+report_key: "studentInfo"
+report_language: "en"
+report_fields: {"university":"FPT University","major":"Information Assurance","company":"Amazon Web Services (AWS) Vietnam Company Limited","position":"Workforce Bootcamp - First Cloud AI Journey (FCAJ)","duration":"From 14/09/2026 to 14/12/2026"}
 title: "Internship Report"
 date: 2026-09-14
 weight: 1

@@ -1,4 +1,8 @@
 ---
+report_key: "worklogs"
+report_language: "en"
+report_fields: {"objectives":"","achievements":"","tasks":[]}
+report_index: 10
 title: "Week 11 Worklog"
 date: 2026-09-14
 weight: 11

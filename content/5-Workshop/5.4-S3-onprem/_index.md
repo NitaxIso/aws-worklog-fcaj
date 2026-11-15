@@ -1,4 +1,8 @@
 ---
+report_key: "workshopChapters"
+report_language: "en"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 3
 title: "Application & Service Integration"
 date: 2026-09-14
 weight: 4

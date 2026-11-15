@@ -1,142 +1,78 @@
-# AWS First Cloud AI Journey (FCAJ) - Internship Report
-## Báo cáo thực tập tốt nghiệp :: Lê Công Luyến
+# AWS Worklog FCAJ
 
-Trang web báo cáo thực tập chính thức được chuẩn hóa 100% theo khung chương trình **AWS First Cloud AI Journey (FCAJ)**.
+Bilingual internship report for AWS First Cloud AI Journey. The deployed application is a **native HTML, CSS and JavaScript static site**, backed by repository Markdown. It does not use Hugo, React, a database or a build pipeline.
 
----
+## Run locally
 
-### 🌐 1. Địa chỉ Website chính thức (GitHub Pages)
+Use Python 3 to serve the repository root:
 
-Website được triển khai tự động qua **GitHub Pages** tại đường dẫn:
+```sh
+python -m http.server 8000
+```
 
-👉 **[https://nitaxiso.github.io/aws-worklog-fcaj/](https://nitaxiso.github.io/aws-worklog-fcaj/)**
+Open http://localhost:8000. Use an HTTP server rather than opening HTML with `file://`, because the application fetches Markdown. Alternatively, `npm start` runs `npx serve -l 3000 .` and may download the server package; no npm install is required for the Python option.
 
-* **Nhật ký công việc (Worklog):** [https://nitaxiso.github.io/aws-worklog-fcaj/#/worklog](https://nitaxiso.github.io/aws-worklog-fcaj/#/worklog)
-* **Đề xuất đồ án (Proposal):** [https://nitaxiso.github.io/aws-worklog-fcaj/#/proposal](https://nitaxiso.github.io/aws-worklog-fcaj/#/proposal)
-* **Bài viết Blog kỹ thuật:** [https://nitaxiso.github.io/aws-worklog-fcaj/#/blogs-posted](https://nitaxiso.github.io/aws-worklog-fcaj/#/blogs-posted)
-* **Sự kiện tham gia:** [https://nitaxiso.github.io/aws-worklog-fcaj/#/events](https://nitaxiso.github.io/aws-worklog-fcaj/#/events)
+## Architecture
 
----
+- `index.html`: entry point and native UI assets.
+- `static/css/fcaj-port.css`: responsive presentation and themes.
+- `static/report-runtime.js`: explicit Markdown path manifest, JSON frontmatter parsing, report assembly and safe article rendering.
+- `static/fcaj-port.js`: hash routes, VI/EN navigation, search, article reader and image viewer.
+- `content/`: authoritative report content, structured metadata and supporting images.
+- `checks/`: dependency-free Node.js and Python checks.
+- `UI-FCAJ/`: optional source-design prototype reference; not required to run or deploy the native site.
 
-### 📋 2. Thông tin sinh viên & Kỳ thực tập (Năm 2026)
+Report content is read from repository files, not browser report storage. The site provides no editor, import workflow or report-writing API. Existing browser report data is not loaded, overwritten or removed. Display preferences may be stored separately. The settings view provides a read-only export of repository report data.
 
-* **Họ và tên sinh viên:** Lê Công Luyến
-* **Trường:** Trường Đại học FPT
-* **Chuyên ngành:** An toàn thông tin
-* **Đơn vị thực tập:** Công ty TNHH Amazon Web Services (AWS) Việt Nam
-* **Chương trình:** Workforce Bootcamp - First Cloud AI Journey (FCAJ)
-* **Mã số sinh viên:** SE190809
-* **Số điện thoại:** 0347047101
-* **Email:** lecongluyen9a1@gmail.com
-* **Thời gian thực tập:** Từ **14/09/2026** đến **14/12/2026**
+## Edit content
 
----
+Use `_index.vi.md` for Vietnamese and `_index.md` for English in the same directory. Preserve the YAML frontmatter delimiters. Fields beginning `report_` contain **JSON values on one line**, not arbitrary YAML; keep stable IDs, ordering and unrelated fields intact. Structured views use these fields, while the full blog reader displays the selected language's Markdown body. Update both representations when editing article titles or summaries.
 
-### 📅 3. Tóm tắt Nội dung Tuần 1 (Week 1)
+| Section | Directory |
+| --- | --- |
+| Profile | `content/` |
+| Twelve weekly worklogs | `content/1-Worklog/` |
+| Proposal | `content/2-Proposal/` |
+| Three blog articles | `content/3-BlogsPosted/` |
+| Event reports and evidence | `content/4-EventParticipated/` |
+| Workshop chapters | `content/5-Workshop/` |
+| Self-evaluation | `content/6-Self-evaluation/` |
+| Feedback | `content/7-Feedback/` |
 
-#### Mục tiêu tuần (Week 1 Objectives):
-* **Onboarding & Văn hóa:** Nắm vững nội quy văn phòng HCM, quy chế điểm danh, tiêu chuẩn bảo mật và lộ trình đánh giá.
-* **Hạ tầng Cloud cơ bản:** Khởi tạo tài khoản AWS Free Tier, cấu hình bảo mật Root MFA và phân quyền IAM người dùng.
-* **Kiểm soát ngân sách:** Thiết lập công cụ AWS Budgets và CloudWatch Billing Alarm để giám sát chi phí học tập $0.
-* **Hỗ trợ kỹ thuật:** Nắm rõ các gói dịch vụ AWS Support và quy trình mở ticket hỗ trợ kỹ thuật hoặc tài khoản.
-* **Tài liệu báo cáo:** Dựng website Worklog cá nhân và thiết lập tự động hóa CI/CD với GitHub Actions.
+Workshop prerequisites live in `content/5-Workshop/5.2-Prerequisite/`; the interface endpoint step lives in `content/5-Workshop/5.4-S3-onprem/5.4.2-create-interface-endpoint/`. Directory spelling does not change numbered UI routes. Keep relative image URLs valid and place evidence beside its content or in the existing static asset groups. Source-document links remain in article Markdown for provenance but are hidden in the article UI.
 
-#### Nội dung công việc từng ngày (Tasks):
-* **Thứ 2 (14/09/2026):**
-  * Tham gia buổi Onboarding với mentor và đội ngũ FCAJ HCM.
-  * Đọc, ghi nhớ và cam kết tuân thủ quy chế thực tập, tác phong làm việc.
-  * Tạo và hoàn tất hồ sơ cá nhân trên hệ thống Portal thực tập.
-  * *Tài liệu:* HCM Rules & Instructions
-* **Thứ 3 (15/09/2026):**
-  * Nghiên cứu chính sách tài khoản AWS Free Tier và cơ chế cấp credit.
-  * Đăng ký thành công tài khoản AWS cá nhân cho kỳ thực tập.
-  * Làm quen với AWS Management Console và cấu hình Region Singapore.
-  * *Tài liệu:* AWS Free Tier Account Setup
-* **Thứ 4 (16/09/2026):**
-  * Kích hoạt Multi-Factor Authentication (MFA) bảo vệ Root Account.
-  * Tạo IAM User / Group quản trị thường nhật theo quy chuẩn Least Privilege.
-  * Kích hoạt Billing Preferences, cấu hình AWS Budgets và CloudWatch Alarm.
-  * *Tài liệu:* AWS Budgets & Cost Alarm
-* **Thứ 5 (17/09/2026):**
-  * Tìm hiểu mô hình AWS Support Center, thời gian SLA các gói hỗ trợ.
-  * Thực hành các bước tạo Support Case khi gặp vấn đề dịch vụ/billing.
-  * Nghiên cứu cấu trúc chuẩn của bộ tài liệu Worklog, Proposal, Workshop.
-  * *Tài liệu:* AWS Support Guide | Workshop Sample
-* **Thứ 6 (18/09/2026):**
-  * Clone và thiết lập theme Worklog trên máy cá nhân.
-  * Cấu hình pipeline GitHub Actions tự động build & deploy lên GitHub Pages.
-  * Soạn thảo hoàn thiện nội dung Worklog Tuần 1 và đồng bộ lên trang web.
-  * *Tài liệu:* Hugo & Pages Deployment
+For new report documents, add the matching language paths to `reportPaths` in `static/report-runtime.js`; a new section or additional article may also require router and index updates. Do not mark plans as completed or invent publication links, attendance, measurements or missing evidence.
 
----
+## Checks
 
-### 📅 4. Tóm tắt Nội dung Tuần 2 (Week 2)
+Run from the repository root with Node.js and Python 3:
 
-* **Thời gian:** 21/09/2026 – 25/09/2026
-* **Chủ đề đào tạo:** Amazon VPC & Amazon EC2
+```sh
+node --check static/report-runtime.js
+node --check static/fcaj-port.js
+node checks/blog_articles.cjs
+node checks/fcaj_port.cjs
+node checks/ui_fcaj.cjs
+python checks/preserve_content.py
+```
 
-#### Mục tiêu tuần (Week 2 Objectives):
-* **Kiến trúc mạng Amazon VPC:** Nắm vững nguyên lý VPC, cấu trúc dải IP CIDR (/16, /24), quy tắc 5 IP bảo lưu và thiết kế Subnet đa vùng sẵn sàng (Multi-AZ).
-* **Định tuyến & Kết nối Internet:** Thiết lập Route Table, Internet Gateway (IGW) cho Public Subnet và giải pháp NAT Gateway cho Private Subnet.
-* **Bảo mật mạng (Firewall in VPC):** Phân biệt chi tiết cơ chế hoạt động của Security Group (Stateful, cấp Instance/ENI) và Network ACL (Stateless, cấp Subnet).
-* **Dịch vụ máy chủ Amazon EC2:** Tìm hiểu chu kỳ sống EC2, phân loại Instance Types (C, R, T, M), so sánh ổ đĩa EBS và Instance Store, bảo mật truy cập Key Pair.
-* **Triển khai thực hành (Hands-on Lab):** Xây dựng hoàn chỉnh kiến trúc mạng tùy chỉnh 2-Tier VPC và khởi tạo máy chủ EC2 kiểm tra luồng kết nối an toàn.
+The preservation check compares against a reviewed SHA-256 baseline; intentional edits require a scoped baseline review, not a blanket refresh. Historical migration parity can be checked with `node checks/report_migration.cjs <external-recovery-directory>` when the original recovery evidence is available; it is not a standalone fresh-clone check. Review rendered VI/EN pages, links, diagrams, mobile layout, keyboard navigation and console/network errors before publishing.
 
-#### Nội dung công việc từng ngày (Tasks):
-* **Thứ 2 (21/09/2026):**
-  * Tìm hiểu khái niệm tổng quan Amazon VPC, phân biệt Default VPC và Custom VPC.
-  * Nghiên cứu quy tắc phân bổ dải mạng CIDR Block (IPv4) cho VPC (ví dụ 10.0.0.0/16).
-  * Tìm hiểu nguyên lý chia Subnet và quy tắc AWS bảo lưu 5 địa chỉ IP trong mỗi subnet (.0, .1, .2, .3, .255).
-  * *Tài liệu:* VPC Subnets Overview | FCAJ Week 2 Sample
-* **Thứ 3 (22/09/2026):**
-  * Nghiên cứu cơ chế định tuyến với Route Table (Main Route Table vs Custom Route Table).
-  * Cấu hình Internet Gateway (IGW), đính kèm vào VPC và trỏ route 0.0.0.0/0 cho Public Subnet.
-  * Tìm hiểu vai trò, cơ chế hoạt động và cách triển khai NAT Gateway trong Public Subnet để cấp internet cho Private Subnet.
-  * *Tài liệu:* Route Table Guide | NAT Gateway Setup
-* **Thứ 4 (23/09/2026):**
-  * So sánh chi tiết hai lớp tường lửa trên AWS: Security Group vs Network ACL (NACL).
-  * Tìm hiểu tính chất Stateful của Security Group (tự động cho phép traffic phản hồi).
-  * Tìm hiểu tính chất Stateless và quy tắc số thứ tự (Rule number) của NACL ở cấp độ Subnet.
-  * Thiết kế quy tắc Inbound/Outbound tối ưu theo nguyên tắc bảo mật phòng thủ chiều sâu.
-  * *Tài liệu:* Security Groups | Network ACLs
-* **Thứ 5 (24/09/2026):**
-  * Thực hành bài lab: Khởi tạo Custom VPC (10.0.0.0/16) trải rộng 2 Availability Zones.
-  * Tạo 2 Public Subnets và 2 Private Subnets, gán Route Tables tương ứng.
-  * Tạo và gán Internet Gateway; thiết lập Security Group cho phép HTTP (Port 80) và SSH (Port 22 từ My IP).
-  * *Tài liệu:* VPC Preparation Lab | Create Security Group
-* **Thứ 6 (25/09/2026):**
-  * Tìm hiểu dịch vụ Amazon EC2: Các nhóm cấu hình (General Purpose, Compute, Memory, Storage), chu kỳ sống instance (Lifecycle).
-  * Khởi tạo máy chủ EC2 trong Public Subnet, cấu hình Key Pair bảo mật và Security Group.
-  * Thực hành kết nối an toàn vào máy chủ qua SSH Terminal và kiểm tra luồng kết nối Internet.
-  * *Tài liệu:* Deploy EC2 Server
+## Deploy to GitHub Pages
 
-#### Kết quả đạt được (Key Achievements):
-1. **Nền tảng mạng chuyên sâu Amazon VPC:**
-   * Hiểu rõ kiến trúc phân chia dải mạng: Thiết kế VPC CIDR block 10.0.0.0/16 (65,536 địa chỉ) và chia thành các subnet /24 (251 IP khả dụng sau khi trừ 5 IP hệ thống).
-   * Nắm vững mô hình High Availability (HA): Thiết kế Subnet trải dài trên tối thiểu 2 Availability Zones (AZ-a, AZ-b) để đảm bảo tính sẵn sàng cao cho ứng dụng.
-   * Làm chủ cơ chế định tuyến Route Table: Cấu hình bảng định tuyến độc lập cho Public Subnet (qua IGW) và Private Subnet (chặn trực tiếp internet).
-2. **Kiến trúc Bảo mật & Kiểm soát lưu lượng (Firewall in VPC):**
-   * Security Group (Lớp bảo vệ Instance): Nắm vững cơ chế Stateful (chỉ cần mở Inbound rule là gói tin phản hồi Outbound tự động được cho phép). Cấu hình rule truy cập giới hạn theo IP nguồn cụ thể (My IP).
-   * Network ACL (Lớp bảo vệ Subnet): Nắm vững tính chất Stateless (phải mở cả Inbound và Outbound rules, bao gồm cổng Ephemeral 1024–65535). Đánh giá thứ tự rule theo số thứ tự (Rule number tăng dần).
-   * Phối hợp đồng thời Security Group và NACL tạo thành mô hình phòng thủ chiều sâu (Defense-in-Depth) chặt chẽ cho hạ tầng Cloud.
-3. **Điện toán máy chủ Amazon EC2 & Lưu trữ dữ liệu:**
-   * Hiểu cách lựa chọn họ máy chủ phù hợp với workload: dòng T/M cho web server thông thường, dòng C cho tính toán nặng, dòng R cho bộ nhớ đệm/database.
-   * Phân biệt rõ ràng giữa EBS Volume (ổ cứng độc lập, bền vững, hỗ trợ snapshot) và Instance Store (ổ cứng gắn trực tiếp, tốc độ cao nhưng mất dữ liệu khi stop máy chủ).
-   * Quản lý bảo mật máy chủ an toàn với Key Pair (.pem) và thực hành kết nối an toàn vào máy chủ qua SSH Terminal.
-4. **Đánh giá tiến độ & Kế hoạch tuần tiếp theo:**
-   * Tiến độ tuần 2: 100% Đạt - Nắm vững toàn bộ lý thuyết cốt lõi về VPC, Subnets, Route Table, Firewall và hoàn thành khởi tạo máy chủ EC2 theo thiết kế.
-   * Kỹ năng thu được: Thành thạo - Tự tay thiết kế và cấu hình topo mạng Multi-AZ trên AWS Console; thành thạo gán Security Group, định tuyến bảng Route và kết nối máy chủ qua SSH.
-   * Mục tiêu tuần 3: Kế hoạch - Tiếp tục nghiên cứu dịch vụ lưu trữ đối tượng Amazon S3, cơ chế phân quyền S3 Bucket Policy, CORS và triển khai mô hình Static Website Hosting.
+The existing GitHub Actions workflow deploys the repository directly on pushes to `main` or `master`, or through manual workflow dispatch. In repository **Settings → Pages**, select **GitHub Actions** as the source. The workflow uploads the repository root and deploys it with the official Pages actions; there is no Hugo or compilation step. Commit and push reviewed changes only when ready to publish. Because the root is uploaded, keep private data, credentials and recovery files outside the repository.
 
----
+## Current limitations
 
-### ⚙️ 5. Tính năng kỹ thuật của Website
+- JavaScript and successful Markdown fetches are required; there is no server-rendered fallback.
+- Blog Markdown supports the headings, paragraphs, emphasis, lists, links and diagrams used by the current articles, not the entire Markdown specification. Raw HTML is escaped and non-HTTP(S) links are rejected.
+- Search covers report navigation and titles, not a full-text article index.
+- Some historical workshop image references remain unresolved; missing images are not fabricated.
+- Report text, publication status, event evidence and workshop outcomes require human review; a rendered page does not establish FCAJ acceptance or completion.
+- Google Fonts require external network access; system fallbacks remain available.
 
-1. **Chỉnh sửa trực tiếp trên Web:**
-   * Hỗ trợ sửa nhanh Mục tiêu tuần, Thành tích đạt được qua Modal chuyên nghiệp.
-   * Thêm / Sửa / Xóa từng dòng công việc linh hoạt.
-   * Xuất / Nhập dữ liệu sao lưu định dạng JSON.
-2. **Hỗ trợ chuyển đổi song ngữ:**
-   * Tiếng Việt / English mượt mà, lưu trạng thái tự động.
-3. **Triển khai tự động:**
-   * GitHub Actions Workflow `.github/workflows/deploy.yml` tự động build và xuất bản lên GitHub Pages khi push mã nguồn.
+## References
+
+- [FCAJ project requirements](https://hcm-rules.awsfcaj.com/project)
+- [Workshop structure reference](https://workshop-sample.awsfcaj.com/1-worklog/)
+- [Bilingual workshop template reference](https://github.com/thienluhoan/fcj-workshop-template)

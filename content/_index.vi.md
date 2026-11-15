@@ -1,4 +1,9 @@
 ---
+report_key: "studentInfo"
+report_language: "vi"
+report_fields: {"university":"Trường Đại học FPT","major":"An toàn thông tin","company":"Công ty TNHH Amazon Web Services (AWS) Việt Nam","position":"Workforce Bootcamp - First Cloud AI Journey (FCAJ)","duration":"Từ ngày 14/09/2026 đến ngày 14/12/2026"}
+report_shared: {"fullName":"Lê Công Luyến","studentId":"SE190809","phone":"0347047101","email":"lecongluyen9a1@gmail.com","className":"","avatarDataUrl":""}
+report_current_week: 1
 title: "Báo cáo thực tập"
 date: 2026-09-14
 weight: 1

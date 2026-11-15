@@ -1,4 +1,9 @@
 ---
+report_key: "worklogs"
+report_language: "vi"
+report_fields: {"objectives":"","achievements":"","tasks":[]}
+report_index: 2
+report_shared: {"weekNum":3}
 title: "Worklog Tuần 3"
 date: 2026-09-14
 weight: 3

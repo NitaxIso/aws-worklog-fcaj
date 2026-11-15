@@ -1,4 +1,7 @@
 ---
+report_key: "proposal"
+report_language: "en"
+report_fields: {"title":"","subtitle":"","summary":"","problem":"","solution":"","roi":"","arch":"","services":"","tech":"","timeline":"","calcUrl":"","budget":"","risks":"","outcomes":""}
 title: "Proposal"
 date: 2026-09-14
 weight: 2

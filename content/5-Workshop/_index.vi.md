@@ -10,7 +10,7 @@ pre: " <b> 5. </b> "
 
 ### Nội dung chính
 1. [Tổng quan về Workshop (Workshop Overview)](5.1-Workshop-overview/)
-2. [Các bước chuẩn bị (Prerequisites)](5.2-Prerequiste/)
+2. [Các bước chuẩn bị (Prerequisites)](5.2-Prerequisite/)
 3. [Triển khai hạ tầng & dịch vụ cốt lõi (Core Infrastructure)](5.3-S3-vpc/)
 4. [Triển khai ứng dụng & tích hợp (Application & Integration)](5.4-S3-onprem/)
 5. [Kiểm thử, chính sách bảo mật & dự toán chi phí (Policy & Validation)](5.5-Policy/)

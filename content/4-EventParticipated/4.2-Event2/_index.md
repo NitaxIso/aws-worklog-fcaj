@@ -1,4 +1,8 @@
 ---
+report_key: "eventEntries"
+report_language: "en"
+report_fields: {"name":"AWS Cloud and AI Day Hanoi","time":"Tuesday, 29/09/2026","location":"AWS Vietnam Office, 26th Floor, Bitexco Financial Tower, 2 Hai Trieu, Ben Nghe, District 1, HCMC","role":"Workforce Bootcamp Intern (Attendee)","purpose":"Explore comprehensive cloud modernization strategies, scalable distributed systems architecture, enterprise Generative AI and autonomous AI Agents, and cloud-native DevSecOps security practices.","speakers":"- AWS Principal Solutions Architects & Technical Evangelists\n- CTOs & Technology Leaders from AWS Premier Partners\n- Security & Compliance Specialists","highlights":"1. Cloud Architecture & Scalability: Large-scale distributed systems, Amazon Dynamo Paper principles, and managed NoSQL via Amazon DynamoDB.\n2. AI Agents & AI-Native Applications: Multi-step reasoning, external tool execution, stateful memory, and human-in-the-loop governance.\n3. AI-Assisted Software Engineering: Accelerating feedback loops with Amazon Q Developer and Claude Code while maintaining code quality and security discipline.\n4. Cloud Security & DevSecOps: Shift-left automated scanning in CI/CD, least-privilege IAM, KMS encryption, and Amazon GuardDuty threat monitoring.\n5. AWS GenAI Enterprise Ecosystem: Foundation Models on Amazon Bedrock, SageMaker JumpStart, and AWS custom silicon (Trainium/Inferentia).","learnings":"1. Mastered distributed systems trade-offs governed by CAP/PACELC theorems.\n2. Enhanced information assurance mindset: Enforcing guardrails, data classification, and mitigation of prompt injection vectors.\n3. Core computer science fundamentals remain the ultimate foundation for engineering excellence.","experience":"Connecting with cloud leaders and solution architects at the Ask-an-Architect booth provided invaluable technical insights into modern production workloads."}
+report_index: 1
 title: "Event 2: AWS Cloud and AI Day Hanoi"
 date: 2026-09-29
 weight: 2
@@ -9,7 +13,7 @@ pre: " <b> 4.2. </b> "
 ### 1. Event Information
 * **Event Name:** AWS Cloud and AI Day Hanoi
 * **Time:** Tuesday, 29/09/2026
-* **Location:** National Convention Center / AWS Partner Venue, Hanoi, Vietnam
+* **Location:** AWS Vietnam Office, 26th Floor, Bitexco Financial Tower, 2 Hai Trieu, Ben Nghe, District 1, HCMC
 * **Role in Event:** Workforce Bootcamp Intern (Attendee)
 
 ### 2. Event Purpose

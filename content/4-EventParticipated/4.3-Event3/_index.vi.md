@@ -1,4 +1,9 @@
 ---
+report_key: "eventEntries"
+report_language: "vi"
+report_fields: {"name":"","time":"","location":"","role":"","purpose":"","speakers":"","highlights":"","learnings":"","experience":""}
+report_index: 2
+report_shared: {"num":3,"photos":[]}
 title: "Event 3"
 date: 2026-09-14
 weight: 3

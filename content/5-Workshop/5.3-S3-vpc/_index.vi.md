@@ -1,4 +1,9 @@
 ---
+report_key: "workshopChapters"
+report_language: "vi"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 2
+report_shared: {"code":"5.3"}
 title: "Triển khai hạ tầng & dịch vụ cốt lõi"
 date: 2026-09-14
 weight: 3

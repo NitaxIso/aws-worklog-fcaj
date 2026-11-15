@@ -1,4 +1,8 @@
 ---
+report_key: "workshopChapters"
+report_language: "en"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 5
 title: "Clean up Resources"
 date: 2026-09-14
 weight: 6

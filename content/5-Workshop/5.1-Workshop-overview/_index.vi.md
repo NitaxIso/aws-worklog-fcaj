@@ -1,4 +1,9 @@
 ---
+report_key: "workshopChapters"
+report_language: "vi"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 0
+report_shared: {"code":"5.1"}
 title: "Tổng quan về Workshop"
 date: 2026-09-14
 weight: 1

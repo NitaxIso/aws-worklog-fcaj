@@ -1,4 +1,9 @@
 ---
+report_key: "workshopChapters"
+report_language: "vi"
+report_fields: {"customTitle":"","content":"","notes":""}
+report_index: 3
+report_shared: {"code":"5.4"}
 title: "Triển khai ứng dụng & tích hợp dịch vụ"
 date: 2026-09-14
 weight: 4

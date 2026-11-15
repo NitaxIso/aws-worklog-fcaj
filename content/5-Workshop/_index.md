@@ -10,7 +10,7 @@ pre: " <b> 5. </b> "
 
 ### Table of Contents
 1. [Workshop Overview](5.1-Workshop-overview/)
-2. [Prerequisites](5.2-Prerequiste/)
+2. [Prerequisites](5.2-Prerequisite/)
 3. [Core Infrastructure Deployment](5.3-S3-vpc/)
 4. [Application & Service Integration](5.4-S3-onprem/)
 5. [Security Policies, Testing & Cost Estimation](5.5-Policy/)
