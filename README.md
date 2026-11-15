@@ -1,96 +1,92 @@
-# AWS Worklog FCAJ
+# ☁️ AWS Worklog FCAJ — Cloud Learning Portfolio
 
-### Lê Công Luyến · AWS First Cloud AI Journey
+> **Báo cáo thực tập và hành trình học tập AWS First Cloud AI Journey của Lê Công Luyến.**
+> Tổng hợp tiến độ, kiến thức và hoạt động cộng đồng qua một website **song ngữ Việt–Anh**, xây dựng bằng **HTML, CSS & JavaScript**.
 
-A bilingual internship portfolio documenting weekly progress, technical articles, community events, a workshop, and personal reflections throughout the AWS First Cloud AI Journey program.
+[![Platform](https://img.shields.io/badge/Platform-GitHub_Pages-blue.svg)](https://nitaxiso.github.io/aws-worklog-fcaj/)
+[![Stack](https://img.shields.io/badge/Stack-HTML_CSS_JavaScript-orange.svg)](static/)
+[![Languages](https://img.shields.io/badge/Languages-VI_%7C_EN-green.svg)](https://nitaxiso.github.io/aws-worklog-fcaj/)
+[![Content](https://img.shields.io/badge/Content-Markdown-blue.svg)](content/)
 
-**[View the live report](https://nitaxiso.github.io/aws-worklog-fcaj/)** · **[Explore events & community activities](https://nitaxiso.github.io/aws-worklog-fcaj/#/events)**
+**[🌐 Xem báo cáo trực tuyến](https://nitaxiso.github.io/aws-worklog-fcaj/)** · **[🎟️ Sự kiện & hoạt động cộng đồng](https://nitaxiso.github.io/aws-worklog-fcaj/#/events)**
 
-## Live website
+---
 
-| Destination | Public URL |
-| --- | --- |
-| Full internship report | https://nitaxiso.github.io/aws-worklog-fcaj/ |
-| Events & community activities | https://nitaxiso.github.io/aws-worklog-fcaj/#/events |
+## 📖 1. Giới thiệu (Overview)
 
-The report is hosted on **GitHub Pages** and can be viewed without running a local server. Stopping localhost or shutting down the development computer does not stop the public website. The `#/events` fragment opens the events view directly; navigation is handled in the browser.
+**AWS Worklog FCAJ** là nơi trình bày báo cáo thực tập của **Lê Công Luyến** trong chương trình **AWS First Cloud AI Journey**: nhật ký 12 tuần, đề xuất dự án, bài viết kỹ thuật, hoạt động cộng đồng, workshop, tự đánh giá và phản hồi.
 
-Readers can switch between **Vietnamese and English**, browse twelve weekly worklogs, read three technical blog articles, and explore event reports and workshop materials. Planned activities remain labeled as planned rather than presented as completed achievements.
+Website được xuất bản trên **GitHub Pages**. Người đọc không cần cài đặt công cụ hay chạy localhost. Tắt máy phát triển hoặc dừng server local **không làm ngừng website online**; website còn phục vụ khi repository và cấu hình GitHub Pages vẫn khả dụng.
 
-## Technology
+| Điểm truy cập | Đường dẫn |
+| :--- | :--- |
+| Trang báo cáo chính | https://nitaxiso.github.io/aws-worklog-fcaj/ |
+| Sự kiện & hoạt động cộng đồng | https://nitaxiso.github.io/aws-worklog-fcaj/#/events |
 
-The deployed application uses **native HTML, CSS and JavaScript**, with repository Markdown as its content source. There is no React, Hugo, application backend, database, or compilation step. GitHub Actions publishes the static repository to GitHub Pages.
+Phần `#/events` là tuyến điều hướng phía trình duyệt, cho phép mở thẳng mục sự kiện.
 
-## Run locally
+---
 
-Use Python 3 to serve the repository root:
+## 🌟 2. Điểm nổi bật (Key Features)
 
-```sh
-python -m http.server 8000
+- 🌐 **Bilingual Experience**
+  - Chuyển đổi nội dung **Việt–Anh**, gồm toàn văn ba bài blog.
+- 📚 **Learning Portfolio**
+  - Nhật ký **12 tuần**, proposal, blog, sự kiện và workshop trong cùng một giao diện.
+  - Hoạt động dự định được ghi rõ trạng thái, không đánh đồng với kết quả đã hoàn thành.
+- 🖼️ **Reading Experience**
+  - Bài viết kèm sơ đồ, trình xem ảnh, giao diện responsive và lựa chọn giao diện sáng/tối.
+- 🗂️ **Repository-driven Content**
+  - Nội dung lấy từ **Markdown trong repository**, không phụ thuộc dữ liệu báo cáo lưu trong trình duyệt.
+  - Website chỉ đọc; có xuất dữ liệu báo cáo, không có trình biên tập hay API ghi nội dung.
+- ⚡ **Minimal Static Stack**
+  - HTML, CSS và JavaScript thuần; **không React, không Hugo, không database**, không bước biên dịch.
+
+---
+
+## 📂 3. Cấu trúc dự án (Project Structure)
+
+```text
+.
+├── index.html                   # Điểm vào website
+├── README.md                    # Giới thiệu và hướng dẫn
+├── content/                     # Nội dung Việt–Anh và hình ảnh
+│   ├── 1-Worklog/               # Nhật ký 12 tuần
+│   ├── 2-Proposal/              # Đề xuất dự án
+│   ├── 3-BlogsPosted/           # Ba bài viết kỹ thuật
+│   ├── 4-EventParticipated/     # Sự kiện và minh chứng
+│   ├── 5-Workshop/              # Tài liệu workshop
+│   ├── 6-Self-evaluation/       # Tự đánh giá
+│   └── 7-Feedback/              # Phản hồi
+├── static/                      # Tài nguyên giao diện
+│   ├── report-runtime.js       # Manifest và xử lý nội dung
+│   ├── fcaj-port.js            # Giao diện và điều hướng
+│   ├── css/fcaj-port.css       # Responsive và theme
+│   └── ui-fcaj/hero.jpg        # Ảnh trang tổng quan
+├── checks/                      # Kiểm tra bằng Node.js và Python
+└── .github/workflows/           # Triển khai GitHub Pages
 ```
 
-Open http://localhost:8000. Use an HTTP server rather than opening HTML with `file://`, because the application fetches Markdown. Alternatively, `npm start` runs `npx serve -l 3000 .` and may download the server package; no npm install is required for the Python option.
+Cây trên thể hiện các thành phần chính, không liệt kê toàn bộ ảnh và tài nguyên phụ.
 
-## Architecture
+---
 
-- `index.html`: entry point and native UI assets.
-- `static/css/fcaj-port.css`: responsive presentation and themes.
-- `static/report-runtime.js`: explicit Markdown path manifest, JSON frontmatter parsing, report assembly and safe article rendering.
-- `static/fcaj-port.js`: hash routes, VI/EN navigation, search, article reader and image viewer.
-- `content/`: authoritative report content, structured metadata and supporting images.
-- `checks/`: dependency-free Node.js and Python checks.
+## 📝 4. Nội dung & quy ước biên tập (Content Guide)
 
-Report content is read from repository files, not browser report storage. The site provides no editor, import workflow or report-writing API. Existing browser report data is not loaded, overwritten or removed. Display preferences may be stored separately. The settings view provides a read-only export of repository report data.
+| Nhóm nội dung | Thư mục | Phạm vi |
+| :--- | :--- | :--- |
+| Hồ sơ | `content/` | Thông tin tổng quan |
+| Worklog | `content/1-Worklog/` | Tiến độ từng tuần |
+| Proposal | `content/2-Proposal/` | Đề xuất dự án |
+| Blog | `content/3-BlogsPosted/` | Bài viết, tham khảo và sơ đồ |
+| Events | `content/4-EventParticipated/` | Nội dung và minh chứng sự kiện |
+| Workshop | `content/5-Workshop/` | Các bước hướng dẫn thực hành |
+| Evaluation | `content/6-Self-evaluation/` | Tự đánh giá |
+| Feedback | `content/7-Feedback/` | Phản hồi chương trình |
 
-## Edit content
-
-Use `_index.vi.md` for Vietnamese and `_index.md` for English in the same directory. Preserve the YAML frontmatter delimiters. Fields beginning `report_` contain **JSON values on one line**, not arbitrary YAML; keep stable IDs, ordering and unrelated fields intact. Structured views use these fields, while the full blog reader displays the selected language's Markdown body. Update both representations when editing article titles or summaries.
-
-| Section | Directory |
-| --- | --- |
-| Profile | `content/` |
-| Twelve weekly worklogs | `content/1-Worklog/` |
-| Proposal | `content/2-Proposal/` |
-| Three blog articles | `content/3-BlogsPosted/` |
-| Event reports and evidence | `content/4-EventParticipated/` |
-| Workshop chapters | `content/5-Workshop/` |
-| Self-evaluation | `content/6-Self-evaluation/` |
-| Feedback | `content/7-Feedback/` |
-
-Workshop prerequisites live in `content/5-Workshop/5.2-Prerequisite/`; the interface endpoint step lives in `content/5-Workshop/5.4-S3-onprem/5.4.2-create-interface-endpoint/`. Directory spelling does not change numbered UI routes. Keep relative image URLs valid and place evidence beside its content or in the existing static asset groups. Source-document links remain in article Markdown for provenance but are hidden in the article UI.
-
-For new report documents, add the matching language paths to `reportPaths` in `static/report-runtime.js`; a new section or additional article may also require router and index updates. Do not mark plans as completed or invent publication links, attendance, measurements or missing evidence.
-
-## Checks
-
-Run from the repository root with Node.js and Python 3:
-
-```sh
-node --check static/report-runtime.js
-node --check static/fcaj-port.js
-node checks/blog_articles.cjs
-node checks/fcaj_port.cjs
-node checks/ui_fcaj.cjs
-python checks/preserve_content.py
-```
-
-The preservation check compares against a reviewed SHA-256 baseline; intentional edits require a scoped baseline review, not a blanket refresh. Historical migration parity can be checked with `node checks/report_migration.cjs <external-recovery-directory>` when the original recovery evidence is available; it is not a standalone fresh-clone check. Review rendered VI/EN pages, links, diagrams, mobile layout, keyboard navigation and console/network errors before publishing.
-
-## Deploy to GitHub Pages
-
-The existing GitHub Actions workflow deploys the repository directly on pushes to `main` or `master`, or through manual workflow dispatch. In repository **Settings > Pages**, select **GitHub Actions** as the source. The workflow uploads the repository root and deploys it with the official Pages actions; there is no Hugo or compilation step. Commit and push reviewed changes only when ready to publish. Because the root is uploaded, keep private data, credentials and recovery files outside the repository.
-
-## Current limitations
-
-- JavaScript and successful Markdown fetches are required; there is no server-rendered fallback.
-- Blog Markdown supports the headings, paragraphs, emphasis, lists, links and diagrams used by the current articles, not the entire Markdown specification. Raw HTML is escaped and non-HTTP(S) links are rejected.
-- Search covers report navigation and titles, not a full-text article index.
-- Some historical workshop image references remain unresolved; missing images are not fabricated.
-- Report text, publication status, event evidence and workshop outcomes require human review; a rendered page does not establish FCAJ acceptance or completion.
-- Google Fonts require external network access; system fallbacks remain available.
-
-## References
-
-- [FCAJ project requirements](https://hcm-rules.awsfcaj.com/project)
-- [Workshop structure reference](https://workshop-sample.awsfcaj.com/1-worklog/)
-- [Bilingual workshop template reference](https://github.com/thienluhoan/fcj-workshop-template)
+- Dùng **`_index.vi.md`** cho tiếng Việt và **`_index.md`** cho tiếng Anh trong cùng thư mục.
+- Giữ dấu phân cách frontmatter. Giá trị của các trường **`report_*` là JSON trên một dòng**, không phải YAML tùy ý.
+- Khi sửa tiêu đề, tóm tắt hoặc dữ liệu xuất hiện ở cả hai nơi, cập nhật đồng bộ metadata và thân bài; giữ nguyên ID và thứ tự không liên quan.
+- Khi thêm tài liệu, bổ sung đường dẫn tương ứng vào `reportPaths` trong `static/report-runtime.js`; mục mới có thể cần cập nhật router và danh sách hiển thị.
+- Giữ đường dẫn ảnh hợp lệ. Các liên kết tài liệu nguồn vẫn được giữ trong Markdown để đối chiếu, nhưng ẩn khỏi giao diện bài viết.
+- Workshop dùng tên thư mục đã chuẩn hóa: `5.2-Prerequisite` và `5.4.2-create-interface-endpoint`; không đổi lại các tên viết sai trước đây.
